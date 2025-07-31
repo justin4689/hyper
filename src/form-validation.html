@@ -1,0 +1,360 @@
+@@include('./partials/html.html')
+
+<head>
+    @@include("./partials/title-meta.html", {"title": "Form Validation"})
+
+    @@include('./partials/head-css.html')
+</head>
+
+<body>
+    <!-- Begin page -->
+    <div class="wrapper">
+
+        @@include('./partials/menu.html')
+
+        <!-- ============================================================== -->
+        <!-- Start Page Content here -->
+        <!-- ============================================================== -->
+
+        <div class="content-page">
+            <div class="content">
+
+                <!-- Start Content-->
+                <div class="container-fluid">
+
+                    @@include("./partials/page-title.html", {"subtitle":"Forms","title":"Form Validation"})
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="header-title">Custom styles</h4>
+                                    <p class="text-muted font-14">Custom feedback styles apply custom colors, borders,
+                                        focus styles, and background
+                                        icons to better communicate feedback. Background icons for
+                                        <code>&lt;select&gt;</code>s are only available with
+                                        <code>.form-select</code>, and not <code>.form-control</code>.
+                                    </p>
+
+                                    <ul class="nav nav-tabs nav-bordered mb-3">
+                                        <li class="nav-item">
+                                            <a href="#custom-styles-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
+                                                Preview
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#custom-styles-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+                                                Code
+                                            </a>
+                                        </li>
+                                    </ul> <!-- end nav-->
+                                    <div class="tab-content">
+                                        <div class="tab-pane show active" id="custom-styles-preview">
+                                            <form class="needs-validation" novalidate>
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="validationCustom01">Prénom</label>
+                                                    <input type="text" class="form-control" id="validationCustom01" placeholder="Prénom" value="Jean" required>
+                                                    <div class="valid-feedback">
+                                                        Parfait !
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="validationCustom02">Nom</label>
+                                                    <input type="text" class="form-control" id="validationCustom02" placeholder="Nom" value="Dupont" required>
+                                                    <div class="valid-feedback">
+                                                        Parfait !
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="validationCustomUsername">Nom d'utilisateur</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                                        <input type="text" class="form-control" id="validationCustomUsername" placeholder="Nom d'utilisateur" aria-describedby="inputGroupPrepend" required>
+                                                        <div class="invalid-feedback">
+                                                            Veuillez entrer un nom d'utilisateur.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="validationCustom03">Ville</label>
+                                                    <input type="text" class="form-control" id="validationCustom03" placeholder="Ville" required>
+                                                    <div class="invalid-feedback">
+                                                        Veuillez fournir une ville valide.
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="validationCustom04">Région</label>
+                                                    <input type="text" class="form-control" id="validationCustom04" placeholder="Région" required>
+                                                    <div class="invalid-feedback">
+                                                        Veuillez fournir une région valide.
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label" for="validationCustom05">Code postal</label>
+                                                    <input type="text" class="form-control" id="validationCustom05" placeholder="Code postal" required>
+                                                    <div class="invalid-feedback">
+                                                        Veuillez fournir un code postal valide.
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="invalidCheck" required>
+                                                        <label class="form-check-label form-label" for="invalidCheck">J'accepte les conditions
+                                                            d'utilisation</label>
+                                                        <div class="invalid-feedback">
+                                                            Vous devez accepter les conditions avant de soumettre.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-primary" type="submit">Envoyer le formulaire</button>
+                                            </form>
+                                        </div> <!-- end preview-->
+
+                                        <div class="tab-pane code" id="custom-styles-code">
+                                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                                            <pre class="mb-0">
+                                                    <code class="language-markup">
+                                                        &lt;form class=&quot;needs-validation&quot; novalidate&gt;
+                                                            &lt;div class=&quot;mb-3&quot;&gt;
+                                                                &lt;label class=&quot;form-label&quot; for=&quot;validationCustom01&quot;&gt;Prénom&lt;/label&gt;
+                                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;validationCustom01&quot; placeholder=&quot;Prénom&quot; value=&quot;Jean&quot; required&gt;
+                                                                &lt;div class=&quot;valid-feedback&quot;&gt;
+                                                                    Parfait !
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class=&quot;mb-3&quot;&gt;
+                                                                &lt;label class=&quot;form-label&quot; for=&quot;validationCustom02&quot;&gt;Nom&lt;/label&gt;
+                                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;validationCustom02&quot; placeholder=&quot;Nom&quot; value=&quot;Dupont&quot; required&gt;
+                                                                &lt;div class=&quot;valid-feedback&quot;&gt;
+                                                                    Parfait !
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class=&quot;mb-3&quot;&gt;
+                                                                &lt;label class=&quot;form-label&quot; for=&quot;validationCustomUsername&quot;&gt;Nom d'utilisateur&lt;/label&gt;
+                                                                &lt;div class=&quot;input-group&quot;&gt;
+                                                                    &lt;span class=&quot;input-group-text&quot; id=&quot;inputGroupPrepend&quot;&gt;@&lt;/span&gt;
+                                                                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;validationCustomUsername&quot; placeholder=&quot;Nom d'utilisateur&quot;
+                                                                        aria-describedby=&quot;inputGroupPrepend&quot; required&gt;
+                                                                    &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                                                        Veuillez entrer un nom d'utilisateur.
+                                                                    &lt;/div&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class=&quot;mb-3&quot;&gt;
+                                                                &lt;label class=&quot;form-label&quot; for=&quot;validationCustom03&quot;&gt;Ville&lt;/label&gt;
+                                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;validationCustom03&quot; placeholder=&quot;Ville&quot; required&gt;
+                                                                &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                                                    Veuillez fournir une ville valide.
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class=&quot;mb-3&quot;&gt;
+                                                                &lt;label class=&quot;form-label&quot; for=&quot;validationCustom04&quot;&gt;Région&lt;/label&gt;
+                                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;validationCustom04&quot; placeholder=&quot;Région&quot; required&gt;
+                                                                &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                                                    Veuillez fournir une région valide.
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class=&quot;mb-3&quot;&gt;
+                                                                &lt;label class=&quot;form-label&quot; for=&quot;validationCustom05&quot;&gt;Code postal&lt;/label&gt;
+                                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;validationCustom05&quot; placeholder=&quot;Code postal&quot; required&gt;
+                                                                &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                                                    Veuillez fournir un code postal valide.
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class=&quot;mb-3&quot;&gt;
+                                                                &lt;div class=&quot;form-check&quot;&gt;
+                                                                    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;invalidCheck&quot; required&gt;
+                                                                    &lt;label class=&quot;form-check-label form-label&quot; for=&quot;invalidCheck&quot;&gt;J'accepte les conditions
+                                                                        d'utilisation&lt;/label&gt;
+                                                                    &lt;div class=&quot;invalid-feedback&quot;&gt;
+                                                                        Vous devez accepter les conditions avant de soumettre.
+                                                                    &lt;/div&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Envoyer le formulaire&lt;/button&gt;
+                                                        &lt;/form&gt;
+                                                    </code>
+                                                </pre> <!-- end highlight-->
+                                        </div> <!-- end preview code-->
+                                    </div> <!-- end tab-content-->
+
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col-->
+
+
+                        <div class="col-lg-6">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="header-title">Tooltips</h4>
+                                    <p class="text-muted font-14">If your form layout allows it, you can swap the
+                                        <code>.{valid|invalid}-feedback</code> classes for
+                                        <code>.{valid|invalid}-tooltip</code> classes to display validation feedback in
+                                        a styled tooltip. Be sure to have a parent with <code>position: relative</code>
+                                        on it for tooltip positioning. In the example below, our column classes have
+                                        this already, but your project may require an alternative setup.
+                                    </p>
+
+                                    <ul class="nav nav-tabs nav-bordered mb-3">
+                                        <li class="nav-item">
+                                            <a href="#tooltips-validation-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
+                                                Preview
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#tooltips-validation-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+                                                Code
+                                            </a>
+                                        </li>
+                                    </ul> <!-- end nav-->
+                                    <div class="tab-content">
+                                        <div class="tab-pane show active" id="tooltips-validation-preview">
+                                            <form class="needs-validation" novalidate>
+                                                <div class="position-relative mb-3">
+                                                    <label class="form-label" for="validationTooltip01">Prénom</label>
+                                                    <input type="text" class="form-control" id="validationTooltip01" placeholder="Prénom" value="Jean" required>
+                                                    <div class="valid-tooltip">
+                                                        Parfait !
+                                                    </div>
+                                                    <div class="invalid-tooltip">
+                                                        Veuillez entrer un prénom.
+                                                    </div>
+                                                </div>
+                                                <div class="position-relative mb-3">
+                                                    <label class="form-label" for="validationTooltip02">Nom</label>
+                                                    <input type="text" class="form-control" id="validationTooltip02" placeholder="Nom" value="Dupont" required>
+                                                    <div class="valid-tooltip">
+                                                        Parfait !
+                                                    </div>
+                                                    <div class="invalid-tooltip">
+                                                        Veuillez entrer un nom.
+                                                    </div>
+                                                </div>
+                                                <div class="position-relative mb-3">
+                                                    <label class="form-label" for="validationTooltipUsername">Nom d'utilisateur</label>
+                                                    <div class="input-group">
+                                                        <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                                                        <input type="text" class="form-control" id="validationTooltipUsername" placeholder="Nom d'utilisateur" aria-describedby="validationTooltipUsernamePrepend" required>
+                                                        <div class="invalid-tooltip">
+                                                            Veuillez choisir un nom d'utilisateur valide et unique.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="position-relative mb-3">
+                                                    <label class="form-label" for="validationTooltip03">Ville</label>
+                                                    <input type="text" class="form-control" id="validationTooltip03" placeholder="Ville" required>
+                                                    <div class="invalid-tooltip">
+                                                        Veuillez fournir une ville valide.
+                                                    </div>
+                                                </div>
+                                                <div class="position-relative mb-3">
+                                                    <label class="form-label" for="validationTooltip04">Région</label>
+                                                    <input type="text" class="form-control" id="validationTooltip04" placeholder="Région" required>
+                                                    <div class="invalid-tooltip">
+                                                        Veuillez fournir une région valide.
+                                                    </div>
+                                                </div>
+                                                <div class="position-relative mb-3">
+                                                    <label class="form-label" for="validationTooltip05">Code postal</label>
+                                                    <input type="text" class="form-control" id="validationTooltip05" placeholder="Code postal" required>
+                                                    <div class="invalid-tooltip">
+                                                        Veuillez fournir un code postal valide.
+                                                    </div>
+                                                </div>
+                                                <button class="btn btn-primary" type="submit">Soumettre le formulaire</button>
+                                            </form>
+                                        </div> <!-- end preview-->
+
+                                        <div class="tab-pane code" id="tooltips-validation-code">
+                                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                                            <pre class="mb-0">
+                                                    <code class="language-markup">
+                                                        &lt;form class=&quot;needs-validation&quot; novalidate&gt;
+                                                            &lt;div class=&quot;position-relative mb-3&quot;&gt;
+                                                                &lt;label class=&quot;form-label&quot; for=&quot;validationTooltip01&quot;&gt;First name&lt;/label&gt;
+                                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;validationTooltip01&quot; placeholder=&quot;First name&quot; value=&quot;Mark&quot; required&gt;
+                                                                &lt;div class=&quot;valid-tooltip&quot;&gt;
+                                                                    Looks good!
+                                                                &lt;/div&gt;
+                                                                &lt;div class=&quot;invalid-tooltip&quot;&gt;
+                                                                    Please enter first name.
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class=&quot;position-relative mb-3&quot;&gt;
+                                                                &lt;label class=&quot;form-label&quot; for=&quot;validationTooltip02&quot;&gt;Last name&lt;/label&gt;
+                                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;validationTooltip02&quot; placeholder=&quot;Last name&quot; value=&quot;Otto&quot; required&gt;
+                                                                &lt;div class=&quot;valid-tooltip&quot;&gt;
+                                                                    Looks good!
+                                                                &lt;/div&gt;
+                                                                &lt;div class=&quot;invalid-tooltip&quot;&gt;
+                                                                    Please enter last name.
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class=&quot;position-relative mb-3&quot;&gt;
+                                                                &lt;label class=&quot;form-label&quot; for=&quot;validationTooltipUsername&quot;&gt;Username&lt;/label&gt;
+                                                                &lt;div class=&quot;input-group&quot;&gt;
+                                                                    &lt;span class=&quot;input-group-text&quot; id=&quot;validationTooltipUsernamePrepend&quot;&gt;@&lt;/span&gt;
+                                                                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;validationTooltipUsername&quot; placeholder=&quot;Username&quot;
+                                                                        aria-describedby=&quot;validationTooltipUsernamePrepend&quot; required&gt;
+                                                                    &lt;div class=&quot;invalid-tooltip&quot;&gt;
+                                                                        Please choose a unique and valid username.
+                                                                    &lt;/div&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class=&quot;position-relative mb-3&quot;&gt;
+                                                                &lt;label class=&quot;form-label&quot; for=&quot;validationTooltip03&quot;&gt;City&lt;/label&gt;
+                                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;validationTooltip03&quot; placeholder=&quot;City&quot; required&gt;
+                                                                &lt;div class=&quot;invalid-tooltip&quot;&gt;
+                                                                    Please provide a valid city.
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class=&quot;position-relative mb-3&quot;&gt;
+                                                                &lt;label class=&quot;form-label&quot; for=&quot;validationTooltip04&quot;&gt;State&lt;/label&gt;
+                                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;validationTooltip04&quot; placeholder=&quot;State&quot; required&gt;
+                                                                &lt;div class=&quot;invalid-tooltip&quot;&gt;
+                                                                    Please provide a valid state.
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class=&quot;position-relative mb-3&quot;&gt;
+                                                                &lt;label class=&quot;form-label&quot; for=&quot;validationTooltip05&quot;&gt;Zip&lt;/label&gt;
+                                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;validationTooltip05&quot; placeholder=&quot;Zip&quot; required&gt;
+                                                                &lt;div class=&quot;invalid-tooltip&quot;&gt;
+                                                                    Please provide a valid zip.
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;button class=&quot;btn btn-primary&quot; type=&quot;submit&quot;&gt;Submit form&lt;/button&gt;
+                                                        &lt;/form&gt;
+                                                    </code>
+                                                </pre> <!-- end highlight-->
+                                        </div> <!-- end preview code-->
+                                    </div> <!-- end tab-content-->
+                                </div> <!-- end card-body-->
+                            </div> <!-- end card-->
+                        </div> <!-- end col-->
+                    </div>
+                    <!-- end row -->
+
+                </div> <!-- container -->
+
+            </div> <!-- content -->
+
+            @@include('./partials/footer.html')
+
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- End Page content -->
+        <!-- ============================================================== -->
+
+    </div>
+    <!-- END wrapper -->
+
+    @@include('./partials/right-sidebar.html')
+
+    @@include('./partials/footer-scripts.html')
+
+    @@include('./partials/syntax-highlight.html')
+
+</body>
+
+</html>
