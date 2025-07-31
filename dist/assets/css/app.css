@@ -4340,12 +4340,12 @@ textarea.form-control-lg {
 
 .nav-tabs {
   --ct-nav-tabs-border-width: var(--ct-border-width);
-  --ct-nav-tabs-border-color: var(--ct-border-color);
+  --ct-nav-tabs-border-color: var(--ct-link-hover-color);
   --ct-nav-tabs-border-radius: var(--ct-border-radius);
-  --ct-nav-tabs-link-hover-border-color: var(--ct-secondary-bg) var(--ct-secondary-bg) var(--ct-border-color);
+  --ct-nav-tabs-link-hover-border-color: var(--ct-secondary-bg) var(--ct-secondary-bg) var(--ct-link-hover-color);
   --ct-nav-tabs-link-active-color: var(--ct-emphasis-color);
   --ct-nav-tabs-link-active-bg: rgba(88, 115, 254, 0.04);
-  --ct-nav-tabs-link-active-border-color: var(--ct-border-color) var(--ct-border-color) rgba(88, 115, 254, 0.04);
+  --ct-nav-tabs-link-active-border-color: var(--ct-link-hover-color);
   border-bottom: var(--ct-nav-tabs-border-width) solid var(--ct-nav-tabs-border-color);
 }
 .nav-tabs .nav-link {
