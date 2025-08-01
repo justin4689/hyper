@@ -1696,6 +1696,418 @@
                     </div>
                     <!-- end row -->
 
+                    <!-- Form Layouts -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="header-title">Form Layouts</h4>
+                                    <p class="text-muted font-14">
+                                        Examples of form layouts with one, two and three columns using Bootstrap's grid system.
+                                    </p>
+
+                                    <ul class="nav nav-tabs nav-bordered mb-3">
+                                        <li class="nav-item">
+                                            <a href="#form-layouts-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
+                                                Preview
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="#form-layouts-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+                                                Code
+                                            </a>
+                                        </li>
+                                    </ul> <!-- end nav-->
+
+                                    <div class="tab-content">
+                                        <div class="tab-pane show active" id="form-layouts-preview">
+                                            <h5 class="mb-3">One Column Form</h5>
+                                            <form class="mb-4">
+                                                <div class="mb-3">
+                                                    <label for="fullname" class="form-label">Full Name</label>
+                                                    <input type="text" class="form-control" id="fullname" placeholder="Enter your name" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="email" class="form-label">Email address</label>
+                                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="password" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="password" placeholder="Enter password">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="birthdate" class="form-label">Birth Date</label>
+                                                    <input type="date" class="form-control" id="birthdate">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="color" class="form-label">Favorite Color</label>
+                                                    <input type="color" class="form-control form-control-color" id="color" value="#5b73e8" title="Choose your color">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="country" class="form-label">Country</label>
+                                                    <select class="form-select" id="country">
+                                                        <option selected>Select a country</option>
+                                                        <option>France</option>
+                                                        <option>United States</option>
+                                                        <option>United Kingdom</option>
+                                                        <option>Germany</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label">Gender</label>
+                                                    <div class="form-check">
+                                                        <input type="radio" id="male" name="gender" class="form-check-input" checked>
+                                                        <label class="form-check-label" for="male">Male</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="radio" id="female" name="gender" class="form-check-input">
+                                                        <label class="form-check-label" for="female">Female</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label class="form-label">Interests</label>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="sports">
+                                                        <label class="form-check-label" for="sports">Sports</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="music" checked>
+                                                        <label class="form-check-label" for="music">Music</label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input type="checkbox" class="form-check-input" id="reading">
+                                                        <label class="form-check-label" for="reading">Reading</label>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="bio" class="form-label">Biography</label>
+                                                    <textarea class="form-control" id="bio" rows="3" placeholder="Tell us about yourself..."></textarea>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="avatar" class="form-label">Profile Picture</label>
+                                                    <input class="form-control" type="file" id="avatar">
+                                                </div>
+                                                <div class="d-flex justify-content-end">
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                </div>
+                                            </form>
+
+                                            <h5 class="mb-3 mt-5">Two Columns Form</h5>
+                                            <form class="mb-4">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="mb-3">
+                                                            <label for="firstname" class="form-label">First Name</label>
+                                                            <input type="text" class="form-control" id="firstname" placeholder="Enter first name" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="mb-3">
+                                                            <label for="lastname" class="form-label">Last Name</label>
+                                                            <input type="text" class="form-control" id="lastname" placeholder="Enter last name" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="mb-3">
+                                                            <label for="email2" class="form-label">Email</label>
+                                                            <input type="email" class="form-control" id="email2" placeholder="Enter email" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="mb-3">
+                                                            <label for="phone" class="form-label">Phone</label>
+                                                            <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="mb-3">
+                                                            <label for="password2" class="form-label">Password</label>
+                                                            <input type="password" class="form-control" id="password2" placeholder="Enter password">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="mb-3">
+                                                            <label for="confirm-password" class="form-label">Confirm Password</label>
+                                                            <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="mb-3">
+                                                            <label for="birthdate2" class="form-label">Date of Birth</label>
+                                                            <input type="date" class="form-control" id="birthdate2">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="mb-3">
+                                                            <label for="country2" class="form-label">Country</label>
+                                                            <select class="form-select" id="country2">
+                                                                <option selected>Select a country</option>
+                                                                <option>France</option>
+                                                                <option>United States</option>
+                                                                <option>United Kingdom</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Gender</label>
+                                                            <div class="form-check form-check-inline">
+                                                                <input type="radio" id="gender-male" name="gender2" class="form-check-input" checked>
+                                                                <label class="form-check-label" for="gender-male">Male</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline">
+                                                                <input type="radio" id="gender-female" name="gender2" class="form-check-input">
+                                                                <label class="form-check-label" for="gender-female">Female</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline">
+                                                                <input type="radio" id="gender-other" name="gender2" class="form-check-input">
+                                                                <label class="form-check-label" for="gender-other">Other</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="address" class="form-label">Address</label>
+                                                    <textarea class="form-control" id="address" rows="2" placeholder="Enter your address"></textarea>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Interests</label>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="sports2">
+                                                                <label class="form-check-label" for="sports2">Sports</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="music2" checked>
+                                                                <label class="form-check-label" for="music2">Music</label>
+                                                            </div>
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="reading2">
+                                                                <label class="form-check-label" for="reading2">Reading</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="profile-pic" class="form-label">Profile Picture</label>
+                                                    <input class="form-control" type="file" id="profile-pic">
+                                                </div>
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="terms2">
+                                                    <label class="form-check-label" for="terms2">I agree to the <a href="#">Terms and Conditions</a></label>
+                                                </div>
+                                                <div class="d-flex justify-content-end">
+                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                </div>
+                                            </form>
+
+                                            <h5 class="mb-3 mt-5">Three Columns Form</h5>
+                                            <form>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="mb-3">
+                                                            <label for="firstname3" class="form-label">First Name</label>
+                                                            <input type="text" class="form-control" id="firstname3" placeholder="Enter first name" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="mb-3">
+                                                            <label for="middlename" class="form-label">Middle Name</label>
+                                                            <input type="text" class="form-control" id="middlename" placeholder="Enter middle name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="mb-3">
+                                                            <label for="lastname3" class="form-label">Last Name</label>
+                                                            <input type="text" class="form-control" id="lastname3" placeholder="Enter last name" required>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="mb-3">
+                                                            <label for="email3" class="form-label">Email</label>
+                                                            <input type="email" class="form-control" id="email3" placeholder="Enter email" required>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="mb-3">
+                                                            <label for="phone3" class="form-label">Phone</label>
+                                                            <input type="tel" class="form-control" id="phone3" placeholder="Enter phone">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="mb-3">
+                                                            <label for="birthdate3" class="form-label">Date of Birth</label>
+                                                            <input type="date" class="form-control" id="birthdate3">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="mb-3">
+                                                            <label for="country3" class="form-label">Country</label>
+                                                            <select class="form-select" id="country3">
+                                                                <option selected>Select a country</option>
+                                                                <option>France</option>
+                                                                <option>United States</option>
+                                                                <option>United Kingdom</option>
+                                                                <option>Germany</option>
+                                                                <option>Spain</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="mb-3">
+                                                            <label for="city3" class="form-label">City</label>
+                                                            <input type="text" class="form-control" id="city3" placeholder="Enter city">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="mb-3">
+                                                            <label for="zipcode" class="form-label">ZIP Code</label>
+                                                            <input type="text" class="form-control" id="zipcode" placeholder="Enter ZIP code">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Preferred Contact Method</label>
+                                                            <div class="form-check form-check-inline">
+                                                                <input type="radio" id="contact-email" name="contact-method" class="form-check-input" checked>
+                                                                <label class="form-check-label" for="contact-email">Email</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline">
+                                                                <input type="radio" id="contact-phone" name="contact-method" class="form-check-input">
+                                                                <label class="form-check-label" for="contact-phone">Phone</label>
+                                                            </div>
+                                                            <div class="form-check form-check-inline">
+                                                                <input type="radio" id="contact-sms" name="contact-method" class="form-check-input">
+                                                                <label class="form-check-label" for="contact-sms">SMS</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="address3" class="form-label">Full Address</label>
+                                                    <textarea class="form-control" id="address3" rows="2" placeholder="Enter your full address"></textarea>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-12">
+                                                        <div class="mb-3">
+                                                            <label class="form-label">Newsletter Subscription</label>
+                                                            <div class="form-check form-switch">
+                                                                <input type="checkbox" class="form-check-input" id="newsletter" checked>
+                                                                <label class="form-check-label" for="newsletter">Subscribe to our newsletter</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="profile-image" class="form-label">Upload Profile Image</label>
+                                                    <input class="form-control" type="file" id="profile-image">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="color-picker" class="form-label">Favorite Color</label>
+                                                    <input type="color" class="form-control form-control-color" id="color-picker" value="#5b73e8" title="Choose your color">
+                                                </div>
+                                                <div class="mb-3 form-check">
+                                                    <input type="checkbox" class="form-check-input" id="terms3" required>
+                                                    <label class="form-check-label" for="terms3">I agree to the <a href="#">Terms and Conditions</a></label>
+                                                    <div class="invalid-feedback">
+                                                        You must agree before submitting.
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex justify-content-end">
+                                                    <button type="submit" class="btn btn-primary me-2">Submit</button>
+                                                    <button type="reset" class="btn btn-light">Reset</button>
+                                                </div>
+                                            </form>
+                                        </div> <!-- end preview-->
+
+                                        <div class="tab-pane code" id="form-layouts-code">
+                                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
+                                            <pre class="mb-0">
+                                                <code class="language-markup">
+                                                    &lt;!-- One Column Form --&gt;
+                                                    &lt;form&gt;
+                                                        &lt;div class="mb-3"&gt;
+                                                            &lt;label for="fullname" class="form-label"&gt;Full Name&lt;/label&gt;
+                                                            &lt;input type="text" class="form-control" id="fullname" placeholder="Enter your name"&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;div class="mb-3"&gt;
+                                                            &lt;label for="email" class="form-label"&gt;Email address&lt;/label&gt;
+                                                            &lt;input type="email" class="form-control" id="email" placeholder="Enter email"&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;!-- More form fields --&gt;
+                                                        &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+                                                    &lt;/form&gt;
+
+                                                    &lt;!-- Two Columns Form --&gt;
+                                                    &lt;form&gt;
+                                                        &lt;div class="row"&gt;
+                                                            &lt;div class="col-md-6"&gt;
+                                                                &lt;div class="mb-3"&gt;
+                                                                    &lt;label for="firstname" class="form-label"&gt;First Name&lt;/label&gt;
+                                                                    &lt;input type="text" class="form-control" id="firstname" placeholder="Enter first name"&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="col-md-6"&gt;
+                                                                &lt;div class="mb-3"&gt;
+                                                                    &lt;label for="lastname" class="form-label"&gt;Last Name&lt;/label&gt;
+                                                                    &lt;input type="text" class="form-control" id="lastname" placeholder="Enter last name"&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;!-- More form rows --&gt;
+                                                        &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+                                                    &lt;/form&gt;
+
+                                                    &lt;!-- Three Columns Form --&gt;
+                                                    &lt;form&gt;
+                                                        &lt;div class="row"&gt;
+                                                            &lt;div class="col-md-4"&gt;
+                                                                &lt;div class="mb-3"&gt;
+                                                                    &lt;label for="firstname2" class="form-label"&gt;First Name&lt;/label&gt;
+                                                                    &lt;input type="text" class="form-control" id="firstname2" placeholder="Enter first name"&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="col-md-4"&gt;
+                                                                &lt;div class="mb-3"&gt;
+                                                                    &lt;label for="middlename" class="form-label"&gt;Middle Name&lt;/label&gt;
+                                                                    &lt;input type="text" class="form-control" id="middlename" placeholder="Enter middle name"&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                            &lt;div class="col-md-4"&gt;
+                                                                &lt;div class="mb-3"&gt;
+                                                                    &lt;label for="lastname2" class="form-label"&gt;Last Name&lt;/label&gt;
+                                                                    &lt;input type="text" class="form-control" id="lastname2" placeholder="Enter last name"&gt;
+                                                                &lt;/div&gt;
+                                                            &lt;/div&gt;
+                                                        &lt;/div&gt;
+                                                        &lt;!-- More form rows --&gt;
+                                                        &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
+                                                    &lt;/form&gt;
+                                                </code>
+                                            </pre> <!-- end highlight-->
+                                        </div> <!-- end preview code-->
+                                    </div> <!-- end tab-content-->
+                                </div> <!-- end card-body -->
+                            </div> <!-- end card -->
+                        </div> <!-- end col -->
+                    </div>
+                    <!-- end row -->
+
                 </div> <!-- container -->
 
             </div> <!-- content -->
