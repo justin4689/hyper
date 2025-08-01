@@ -26,7 +26,7 @@
         },
 
         menu: {
-            color: "dark",
+            color: "light",
         },
 
         // This option for only vertical (left Sidebar) layout
