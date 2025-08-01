@@ -21083,6 +21083,33 @@ pre[class*=language-] code:not(:last-of-type) {
   margin-bottom: 1rem;
 }
 
+.action-icon {
+  color: #6c757d;
+  -webkit-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+}
+.action-icon:hover {
+  text-decoration: none;
+}
+.action-icon.view {
+  color: #5f6caf;
+}
+.action-icon.view:hover {
+  color: #495592;
+}
+.action-icon.edit {
+  color: #6a9c89;
+}
+.action-icon.edit:hover {
+  color: #547f6f;
+}
+.action-icon.delete {
+  color: #d17d7d;
+}
+.action-icon.delete:hover {
+  color: #c45757;
+}
+
 #basic-datatable {
   /* Style personnalisé pour l'alternance */
   /* Style pour les cellules */

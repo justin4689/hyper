@@ -99,7 +99,39 @@ File: Main Css File
 @import "plugins/frappe-gantt";
 @import "plugins/prismjs";
 
-
+// Styles pour les icônes d'action
+.action-icon {
+    color: #6c757d; // Couleur par défaut (gris)
+    transition: color 0.2s ease-in-out;
+    
+    &:hover {
+        text-decoration: none;
+    }
+    
+    &.view {
+        color: #5f6caf; // Bleu doux pour l'œil
+        
+        &:hover {
+            color: darken(#5f6caf, 10%);
+        }
+    }
+    
+    &.edit {
+        color: #6a9c89; // Vert doux pour l'édition
+        
+        &:hover {
+            color: darken(#6a9c89, 10%);
+        }
+    }
+    
+    &.delete {
+        color: #d17d7d; // Rouge doux pour la suppression
+        
+        &:hover {
+            color: darken(#d17d7d, 10%);
+        }
+    }
+}
 
 #basic-datatable {
     thead th {
@@ -131,19 +163,13 @@ File: Main Css File
     }
 }
 
-
-
-
 .dt-layout-table {
     margin-top: 1.20rem !important;
 }
 
-
-
 .btn {
     height: 36px !important;
     border-radius: 0.375rem !important;
-   
 }
 
 .mx-20 {
