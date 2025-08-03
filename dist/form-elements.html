@@ -1181,26 +1181,9 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="header-title">Input Types</h4>
-                                    <p class="text-muted font-14">
-                                        Most common form control, text-based input fields. Includes support for all HTML5 types: <code>text</code>, <code>password</code>, <code>datetime</code>, <code>datetime-local</code>, <code>date</code>, <code>month</code>, <code>time</code>, <code>week</code>, <code>number</code>, <code>email</code>, <code>url</code>, <code>search</code>, <code>tel</code>, and <code>color</code>.
-                                    </p>
-
-                                    <ul class="nav nav-tabs nav-bordered mb-3">
-                                        <li class="nav-item">
-                                            <a href="#input-types-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
-                                                Preview
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#input-types-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-                                                Code
-                                            </a>
-                                        </li>
-                                    </ul> <!-- end nav-->
-
-                                    <div class="tab-content">
-                                        <div class="tab-pane show active" id="input-types-preview">
-                                            <div class="row">
+                                   
+                                    <div class="">
+                                        <div class="row">
                                                 <div class="col-lg-6">
                                                     <form>
                                                         <div class="mb-3">
@@ -1329,134 +1312,10 @@
 
                                                     </form>
                                                 </div> <!-- end col -->
-                                            </div>
-                                            <!-- end row-->
-                                        </div> <!-- end preview-->
+                                    </div>
+                                    <!-- end row-->
 
-                                        <div class="tab-pane code" id="input-types-code">
-                                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
-                                            <pre class="mb-0">
-                                                    <code class="language-markup">
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;simpleinput&quot; class=&quot;form-label&quot;&gt;Text&lt;/label&gt;
-                                                            &lt;input type=&quot;text&quot; id=&quot;simpleinput&quot; class=&quot;form-control&quot;&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-email&quot; class=&quot;form-label&quot;&gt;Email&lt;/label&gt;
-                                                            &lt;input type=&quot;email&quot; id=&quot;example-email&quot; name=&quot;example-email&quot; class=&quot;form-control&quot; placeholder=&quot;Email&quot;&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-password&quot; class=&quot;form-label&quot;&gt;Password&lt;/label&gt;
-                                                            &lt;input type=&quot;password&quot; id=&quot;example-password&quot; class=&quot;form-control&quot; value=&quot;password&quot;&gt;
-                                                        &lt;/div&gt;
-
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;password&quot; class=&quot;form-label&quot;&gt;Show/Hide Password&lt;/label&gt;
-                                                            &lt;div class=&quot;input-group input-group-merge&quot;&gt;
-                                                                &lt;input type=&quot;password&quot; id=&quot;password&quot; class=&quot;form-control&quot; placeholder=&quot;Enter your password&quot;&gt;
-                                                                &lt;div class=&quot;input-group-text&quot; data-password=&quot;false&quot;&gt;
-                                                                    &lt;span class=&quot;password-eye&quot;&gt;&lt;/span&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-palaceholder&quot; class=&quot;form-label&quot;&gt;Placeholder&lt;/label&gt;
-                                                            &lt;input type=&quot;text&quot; id=&quot;example-palaceholder&quot; class=&quot;form-control&quot; placeholder=&quot;placeholder&quot;&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-textarea&quot; class=&quot;form-label&quot;&gt;Text area&lt;/label&gt;
-                                                            &lt;textarea class=&quot;form-control&quot; id=&quot;example-textarea&quot; rows=&quot;5&quot;&gt;&lt;/textarea&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-readonly&quot; class=&quot;form-label&quot;&gt;Readonly&lt;/label&gt;
-                                                            &lt;input type=&quot;text&quot; id=&quot;example-readonly&quot; class=&quot;form-control&quot; readonly=&quot;&quot; value=&quot;Readonly value&quot;&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-disable&quot; class=&quot;form-label&quot;&gt;Disabled&lt;/label&gt;
-                                                            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;example-disable&quot; disabled=&quot;&quot; value=&quot;Disabled value&quot;&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-static&quot; class=&quot;form-label&quot;&gt;Static control&lt;/label&gt;
-                                                            &lt;input type=&quot;text&quot; readonly class=&quot;form-control-plaintext&quot; id=&quot;example-static&quot; value=&quot;email@example.com&quot;&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-helping&quot; class=&quot;form-label&quot;&gt;Helping text&lt;/label&gt;
-                                                            &lt;input type=&quot;text&quot; id=&quot;example-helping&quot; class=&quot;form-control&quot; placeholder=&quot;Helping text&quot;&gt;
-                                                            &lt;span class=&quot;help-block&quot;&gt;&lt;small&gt;A block of help text that breaks onto a new line and may extend beyond one line.&lt;/small&gt;&lt;/span&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-select&quot; class=&quot;form-label&quot;&gt;Input Select&lt;/label&gt;
-                                                            &lt;select class=&quot;form-select&quot; id=&quot;example-select&quot;&gt;
-                                                                &lt;option&gt;1&lt;/option&gt;
-                                                                &lt;option&gt;2&lt;/option&gt;
-                                                                &lt;option&gt;3&lt;/option&gt;
-                                                                &lt;option&gt;4&lt;/option&gt;
-                                                                &lt;option&gt;5&lt;/option&gt;
-                                                            &lt;/select&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-multiselect&quot; class=&quot;form-label&quot;&gt;Multiple Select&lt;/label&gt;
-                                                            &lt;select id=&quot;example-multiselect&quot; multiple class=&quot;form-control&quot;&gt;
-                                                                &lt;option&gt;1&lt;/option&gt;
-                                                                &lt;option&gt;2&lt;/option&gt;
-                                                                &lt;option&gt;3&lt;/option&gt;
-                                                                &lt;option&gt;4&lt;/option&gt;
-                                                                &lt;option&gt;5&lt;/option&gt;
-                                                            &lt;/select&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-fileinput&quot; class=&quot;form-label&quot;&gt;Default file input&lt;/label&gt;
-                                                            &lt;input type=&quot;file&quot; id=&quot;example-fileinput&quot; class=&quot;form-control&quot;&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-date&quot; class=&quot;form-label&quot;&gt;Date&lt;/label&gt;
-                                                            &lt;input class=&quot;form-control&quot; id=&quot;example-date&quot; type=&quot;date&quot; name=&quot;date&quot;&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-month&quot; class=&quot;form-label&quot;&gt;Month&lt;/label&gt;
-                                                            &lt;input class=&quot;form-control&quot; id=&quot;example-month&quot; type=&quot;month&quot; name=&quot;month&quot;&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-time&quot; class=&quot;form-label&quot;&gt;Time&lt;/label&gt;
-                                                            &lt;input class=&quot;form-control&quot; id=&quot;example-time&quot; type=&quot;time&quot; name=&quot;time&quot;&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-week&quot; class=&quot;form-label&quot;&gt;Week&lt;/label&gt;
-                                                            &lt;input class=&quot;form-control&quot; id=&quot;example-week&quot; type=&quot;week&quot; name=&quot;week&quot;&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-number&quot; class=&quot;form-label&quot;&gt;Number&lt;/label&gt;
-                                                            &lt;input class=&quot;form-control&quot; id=&quot;example-number&quot; type=&quot;number&quot; name=&quot;number&quot;&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-color&quot; class=&quot;form-label&quot;&gt;Color&lt;/label&gt;
-                                                            &lt;input class=&quot;form-control&quot; id=&quot;example-color&quot; type=&quot;color&quot; name=&quot;color&quot; value=&quot;#727cf5&quot;&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-0&quot;&gt;
-                                                            &lt;label for=&quot;example-range&quot; class=&quot;form-label&quot;&gt;Range&lt;/label&gt;
-                                                            &lt;input class=&quot;form-range&quot; id=&quot;example-range&quot; type=&quot;range&quot; name=&quot;range&quot; min=&quot;0&quot; max=&quot;100&quot;&gt;
-                                                        &lt;/div&gt;
-                                                    </code>
-                                                </pre> <!-- end highlight-->
-                                        </div> <!-- end preview code-->
+                                      
                                     </div> <!-- end tab-content-->
                                 </div> <!-- end card-body -->
                             </div> <!-- end card -->
@@ -1468,24 +1327,10 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="header-title">Floating labels</h4>
-                                    <p class="text-muted font-14">
-                                        Wrap a pair of <code>&lt;input class="form-control"&gt;</code> and <code>&lt;label&gt;</code> elements in <code>.form-floating</code> to enable floating labels with Bootstrap’s textual form fields. A <code>placeholder</code> is required on each <code>&lt;input&gt;</code> as our method of CSS-only floating labels uses the <code>:placeholder-shown</code> pseudo-element. Also note that the <code>&lt;input&gt;</code> must come first so we can utilize a sibling selector (e.g., <code>~</code>).
-                                    </p>
-                                    <ul class="nav nav-tabs nav-bordered mb-3">
-                                        <li class="nav-item">
-                                            <a href="#floating-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
-                                                Preview
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#floating-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-                                                Code
-                                            </a>
-                                        </li>
-                                    </ul> <!-- end nav-->
+                                    
 
-                                    <div class="tab-content">
-                                        <div class="tab-pane show active" id="floating-preview">
+                                    <div class="">
+                                        <div class="">
                                             <div class="row">
                                                 <div class="col-lg-6">
                                                     <h5 class="mb-3">Example</h5>
@@ -1540,58 +1385,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane code" id="floating-code">
-                                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
-                                            <pre class="mb-0">
-                                                    <code class="language-markup">
-                                                              
-                                                    &lt;div class=&quot;form-floating mb-3&quot;&gt;
-                                                            &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;floatingInput&quot; placeholder=&quot;name@example.com&quot; /&gt;
-                                                            &lt;label for=&quot;floatingInput&quot;&gt;Email address&lt;/label&gt;
-                                                    &lt;/div&gt;
-
-                                                    &lt;div class=&quot;form-floating&quot;&gt;
-                                                        &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;floatingPassword&quot; placeholder=&quot;Password&quot; /&gt;
-                                                        &lt;label for=&quot;floatingPassword&quot;&gt;Password&lt;/label&gt;
-                                                    &lt;/div&gt;
-
-                                                    &lt;div class=&quot;form-floating&quot;&gt;
-                                                        &lt;textarea class=&quot;form-control&quot; placeholder=&quot;Leave a comment here&quot; id=&quot;floatingTextarea&quot; style=&quot;height: 100px;&quot;&gt;&lt;/textarea&gt;
-                                                        &lt;label for=&quot;floatingTextarea&quot;&gt;Comments&lt;/label&gt;
-                                                    &lt;/div&gt;
-
-                                                    &lt;div class=&quot;form-floating&quot;&gt;
-                                                        &lt;select class=&quot;form-select&quot; id=&quot;floatingSelect&quot; aria-label=&quot;Floating label select example&quot;&gt;
-                                                            &lt;option selected&gt;Open this select menu&lt;/option&gt;
-                                                            &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
-                                                            &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
-                                                            &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
-                                                        &lt;/select&gt;
-                                                        &lt;label for=&quot;floatingSelect&quot;&gt;Works with selects&lt;/label&gt;
-                                                    &lt;/div&gt;
-
-                                                    &lt;div class=&quot;row g-2&quot;&gt;
-                                                        &lt;div class=&quot;col-md&quot;&gt;
-                                                            &lt;div class=&quot;form-floating&quot;&gt;
-                                                                &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;floatingInputGrid&quot; placeholder=&quot;name@example.com&quot; value=&quot;mdo@example.com&quot; /&gt;
-                                                                &lt;label for=&quot;floatingInputGrid&quot;&gt;Email address&lt;/label&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class=&quot;col-md&quot;&gt;
-                                                            &lt;div class=&quot;form-floating&quot;&gt;
-                                                                &lt;select class=&quot;form-select&quot; id=&quot;floatingSelectGrid&quot; aria-label=&quot;Floating label select example&quot;&gt;
-                                                                    &lt;option selected&gt;Open this select menu&lt;/option&gt;
-                                                                    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
-                                                                    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
-                                                                    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
-                                                                &lt;/select&gt;
-                                                                &lt;label for=&quot;floatingSelectGrid&quot;&gt;Works with selects&lt;/label&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/div&gt;
-                                                    &lt;/div&gt;
-                                                    </code>
-                                                </pre> <!-- end highlight-->
-                                        </div> <!-- end preview code-->
+                                        
                                     </div> <!-- end tab-content-->
                                 </div> <!-- end card-body -->
                             </div> <!-- end card -->
@@ -1605,23 +1399,9 @@
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <h4 class="header-title">Select</h4>
-                                            <p class="text-muted font-14">
-                                                <code>&lt;select&gt;</code> menus need only a custom class, <code>.form-select</code> to trigger the custom styles.
-                                            </p>
+                                          
 
-                                            <ul class="nav nav-tabs nav-bordered mb-3">
-                                                <li class="nav-item">
-                                                    <a href="#form-select-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
-                                                        Preview
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="#form-select-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-                                                        Code
-                                                    </a>
-                                                </li>
-                                            </ul> <!-- end nav-->
-                                            <div class="tab-content">
+                                            <div class="">
                                                 <div class="tab-pane show active" id="form-select-preview">
                                                     <select class="form-select mb-3">
                                                         <option selected>Open this select menu</option>
@@ -1661,71 +1441,14 @@
                                                     </div>
                                                 </div> <!-- end preview-->
 
-                                                <div class="tab-pane code" id="form-select-code">
-                                                    <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
-                                                    <pre class="mb-0">
-                                                            <code class="language-markup">
-                                                                &lt;select class=&quot;form-select mb-3&quot;&gt;
-                                                                    &lt;option selected&gt;Open this select menu&lt;/option&gt;
-                                                                    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
-                                                                    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
-                                                                    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
-                                                                &lt;/select&gt;     
-                                                                &lt;select class=&quot;form-select form-select-lg mb-3&quot;&gt;
-                                                                    &lt;option selected&gt;Open this select menu&lt;/option&gt;
-                                                                    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
-                                                                    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
-                                                                    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
-                                                                &lt;/select&gt;
-                                                                &lt;select class=&quot;form-select form-select-sm mb-3&quot;&gt;
-                                                                    &lt;option selected&gt;Open this select menu&lt;/option&gt;
-                                                                    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
-                                                                    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
-                                                                    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
-                                                                &lt;/select&gt; 
-                                                                &lt;div class=&quot;input-group mb-3&quot;&gt;
-                                                                    &lt;label class=&quot;input-group-text&quot; for=&quot;inputGroupSelect01&quot;&gt;Options&lt;/label&gt;
-                                                                    &lt;select class=&quot;form-select&quot; id=&quot;inputGroupSelect01&quot;&gt;
-                                                                    &lt;option selected&gt;Choose...&lt;/option&gt;
-                                                                    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
-                                                                    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
-                                                                    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
-                                                                    &lt;/select&gt;
-                                                                &lt;/div&gt;   
-                                                                &lt;div class=&quot;input-group&quot;&gt;
-                                                                    &lt;select class=&quot;form-select&quot; id=&quot;inputGroupSelect04&quot; aria-label=&quot;Example select with button addon&quot;&gt;
-                                                                    &lt;option selected&gt;Choose...&lt;/option&gt;
-                                                                    &lt;option value=&quot;1&quot;&gt;One&lt;/option&gt;
-                                                                    &lt;option value=&quot;2&quot;&gt;Two&lt;/option&gt;
-                                                                    &lt;option value=&quot;3&quot;&gt;Three&lt;/option&gt;
-                                                                    &lt;/select&gt;
-                                                                    &lt;button class=&quot;btn btn-outline-secondary&quot; type=&quot;button&quot;&gt;Button&lt;/button&gt;
-                                                                &lt;/div&gt;  
-                                                            </code>
-                                                        </pre> <!-- end highlight-->
-                                                </div> <!-- end preview code-->
+                                               
                                             </div> <!-- end tab-content-->
 
                                         </div> <!-- end col -->
 
                                         <div class="col-lg-6">
                                             <h4 class="header-title mt-5 mt-lg-0">Switches</h4>
-                                            <p class="text-muted font-14">
-                                                A switch has the markup of a custom checkbox but uses the <code>.form-switch</code> class to render a toggle switch. Switches also support the <code>disabled</code> attribute.
-                                            </p>
-
-                                            <ul class="nav nav-tabs nav-bordered mb-3">
-                                                <li class="nav-item">
-                                                    <a href="#custom-switch-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
-                                                        Preview
-                                                    </a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a href="#custom-switch-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-                                                        Code
-                                                    </a>
-                                                </li>
-                                            </ul> <!-- end nav-->
+                                       
                                             <div class="tab-content">
                                                 <div class="tab-pane show active" id="custom-switch-preview">
                                                     <div class="form-check form-switch">
@@ -1738,24 +1461,6 @@
                                                     </div>
                                                 </div> <!-- end preview-->
 
-                                                <div class="tab-pane code" id="custom-switch-code">
-                                                    <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
-                                                    <pre class="mb-0">
-                                                            <code class="language-markup">
-                                                                &lt;!-- Custom Switch --&gt;
-                                                                &lt;div class=&quot;form-check form-switch&quot;&gt;
-                                                                    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customSwitch1&quot;&gt;
-                                                                    &lt;label class=&quot;form-check-label&quot; for=&quot;customSwitch1&quot;&gt;Toggle this switch element&lt;/label&gt;
-                                                                &lt;/div&gt;
-                                                                
-                                                                &lt;!-- Custom Switch Disabled --&gt;
-                                                                &lt;div class=&quot;form-check form-switch&quot;&gt;
-                                                                    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; disabled id=&quot;customSwitch2&quot;&gt;
-                                                                    &lt;label class=&quot;form-check-label&quot; for=&quot;customSwitch2&quot;&gt;Disabled switch element&lt;/label&gt;
-                                                                &lt;/div&gt; 
-                                                            </code>
-                                                        </pre> <!-- end highlight-->
-                                                </div> <!-- end preview code-->
                                             </div> <!-- end tab-content-->
                                         </div> <!-- end col -->
                                     </div> <!-- end row -->
@@ -1772,24 +1477,9 @@
                                 <div class="card-body">
 
                                     <h4 class="header-title mt-5 mt-lg-0">Checkboxes </h4>
-                                    <p class="text-muted font-14">
-                                        Each checkbox and radio <code>&lt;input&gt;</code> and <code>&lt;label&gt;</code> pairing is wrapped in a <code>&lt;div&gt;</code> to create our custom control. Structurally, this is the same approach as our default <code>.form-check</code>.
-                                    </p>
-
-                                    <ul class="nav nav-tabs nav-bordered mb-3">
-                                        <li class="nav-item">
-                                            <a href="#checkbox-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
-                                                Preview
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#checkbox-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-                                                Code
-                                            </a>
-                                        </li>
-                                    </ul> <!-- end nav-->
-                                    <div class="tab-content">
-                                        <div class="tab-pane show active" id="checkbox-preview">
+                                    
+                                    <div class="">
+                                        <div class="" id="checkbox-preview">
                                             <h6 class="font-15">Checkboxes</h6>
                                             <div class="mt-3">
                                                 <div class="form-check">
@@ -1861,81 +1551,7 @@
 
                                         </div> <!-- end preview-->
 
-                                        <div class="tab-pane code" id="checkbox-code">
-                                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
-                                            <pre class="mb-0">
-                                                    <code class="language-markup">
-                                                        &lt;!-- Checkboxes--&gt; 
-                                                        &lt;div class=&quot;mt-3&quot;&gt;
-                                                            &lt;div class=&quot;form-check&quot;&gt;
-                                                                &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheck1&quot;&gt;
-                                                                &lt;label class=&quot;form-check-label&quot; for=&quot;customCheck1&quot;&gt;Check this custom checkbox&lt;/label&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class=&quot;form-check&quot;&gt;
-                                                                &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheck2&quot;&gt;
-                                                                &lt;label class=&quot;form-check-label&quot; for=&quot;customCheck2&quot;&gt;Check this custom checkbox&lt;/label&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/div&gt;
-
-                                                        &lt;!-- Inline--&gt; 
-
-                                                        &lt;div class=&quot;mt-2&quot;&gt;
-                                                            &lt;div class=&quot;form-check form-check-inline&quot;&gt;
-                                                                &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheck3&quot;&gt;
-                                                                &lt;label class=&quot;form-check-label&quot; for=&quot;customCheck3&quot;&gt;Check this custom checkbox&lt;/label&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class=&quot;form-check form-check-inline&quot;&gt;
-                                                                &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheck4&quot;&gt;
-                                                                &lt;label class=&quot;form-check-label&quot; for=&quot;customCheck4&quot;&gt;Check this custom checkbox&lt;/label&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/div&gt;
-
-                                                        &lt;!-- Disabled--&gt;
-
-                                                        &lt;div class=&quot;mt-2&quot;&gt;
-                                                            &lt;div class=&quot;form-check form-check-inline&quot;&gt;
-                                                                &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheck5&quot; checked disabled&gt;
-                                                                &lt;label class=&quot;form-check-label&quot; for=&quot;customCheck5&quot;&gt;Check this custom checkbox&lt;/label&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class=&quot;form-check form-check-inline&quot;&gt;
-                                                                &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheck6&quot; disabled&gt;
-                                                                &lt;label class=&quot;form-check-label&quot; for=&quot;customCheck6&quot;&gt;Check this custom checkbox&lt;/label&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/div&gt;
-
-                                                        &lt;!-- Colors--&gt;
-
-                                                        &lt;div class=&quot;form-check mb-2&quot;&gt;
-                                                            &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheckcolor1&quot; checked&gt;
-                                                            &lt;label class=&quot;form-check-label&quot; for=&quot;customCheckcolor1&quot;&gt;Default Checkbox&lt;/label&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class=&quot;form-check form-checkbox-success mb-2&quot;&gt;
-                                                            &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheckcolor2&quot; checked&gt;
-                                                            &lt;label class=&quot;form-check-label&quot; for=&quot;customCheckcolor2&quot;&gt;Success Checkbox&lt;/label&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class=&quot;form-check form-checkbox-info mb-2&quot;&gt;
-                                                            &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheckcolor3&quot; checked&gt;
-                                                            &lt;label class=&quot;form-check-label&quot; for=&quot;customCheckcolor3&quot;&gt;Info Checkbox&lt;/label&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class=&quot;form-check form-checkbox-secondary mb-2&quot;&gt;
-                                                            &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheckcolor6&quot; checked&gt;
-                                                            &lt;label class=&quot;form-check-label&quot; for=&quot;customCheckcolor6&quot;&gt;Secondary Checkbox&lt;/label&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class=&quot;form-check form-checkbox-warning mb-2&quot;&gt;
-                                                            &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheckcolor4&quot; checked&gt;
-                                                            &lt;label class=&quot;form-check-label&quot; for=&quot;customCheckcolor4&quot;&gt;Warning Checkbox&lt;/label&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class=&quot;form-check form-checkbox-danger mb-2&quot;&gt;
-                                                            &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheckcolor5&quot; checked&gt;
-                                                            &lt;label class=&quot;form-check-label&quot; for=&quot;customCheckcolor5&quot;&gt;Danger Checkbox&lt;/label&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class=&quot;form-check form-checkbox-dark&quot;&gt;
-                                                            &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheckcolor7&quot; checked&gt;
-                                                            &lt;label class=&quot;form-check-label&quot; for=&quot;customCheckcolor7&quot;&gt;Dark Checkbox&lt;/label&gt;
-                                                        &lt;/div&gt;
-                                                    </code>
-                                                </pre> <!-- end highlight-->
-                                        </div> <!-- end preview code-->
+                                       
                                     </div> <!-- end tab-content-->
 
                                 </div> <!-- end card-body -->
@@ -1946,24 +1562,10 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="header-title mt-5 mt-lg-0">radios</h4>
-                                    <p class="text-muted font-14">
-                                        Each checkbox and radio <code>&lt;input&gt;</code> and <code>&lt;label&gt;</code> pairing is wrapped in a <code>&lt;div&gt;</code> to create our custom control. Structurally, this is the same approach as our default <code>.form-check</code>.
-                                    </p>
+                                
 
-                                    <ul class="nav nav-tabs nav-bordered mb-3">
-                                        <li class="nav-item">
-                                            <a href="#radio-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
-                                                Preview
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#radio-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-                                                Code
-                                            </a>
-                                        </li>
-                                    </ul> <!-- end nav-->
-                                    <div class="tab-content">
-                                        <div class="tab-pane show active" id="radio-preview">
+                                    <div >
+                                        <div  id="radio-preview">
 
                                             <h6 class="font-15 mt-3">Radios</h6>
 
@@ -2037,82 +1639,7 @@
 
                                         </div> <!-- end preview-->
 
-                                        <div class="tab-pane code" id="radio-code">
-                                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
-                                            <pre class="mb-0">
-                                                    <code class="language-markup">
-                                                        &lt;!-- Radios--&gt; 
-
-                                                        &lt;div class=&quot;mt-3&quot;&gt;
-                                                            &lt;div class=&quot;form-check&quot;&gt;
-                                                                &lt;input type=&quot;radio&quot; id=&quot;customRadio1&quot; name=&quot;customRadio&quot; class=&quot;form-check-input&quot;&gt;
-                                                                &lt;label class=&quot;form-check-label&quot; for=&quot;customRadio1&quot;&gt;Toggle this custom radio&lt;/label&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class=&quot;form-check&quot;&gt;
-                                                                &lt;input type=&quot;radio&quot; id=&quot;customRadio2&quot; name=&quot;customRadio&quot; class=&quot;form-check-input&quot;&gt;
-                                                                &lt;label class=&quot;form-check-label&quot; for=&quot;customRadio2&quot;&gt;Or toggle this other custom radio&lt;/label&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/div&gt; 
-
-                                                        &lt;!-- Inline--&gt;
-
-                                                        &lt;div class=&quot;mt-2&quot;&gt;
-                                                            &lt;div class=&quot;form-check form-check-inline&quot;&gt;
-                                                                &lt;input type=&quot;radio&quot; id=&quot;customRadio3&quot; name=&quot;customRadio1&quot; class=&quot;form-check-input&quot;&gt;
-                                                                &lt;label class=&quot;form-check-label&quot; for=&quot;customRadio3&quot;&gt;Toggle this custom radio&lt;/label&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class=&quot;form-check form-check-inline&quot;&gt;
-                                                                &lt;input type=&quot;radio&quot; id=&quot;customRadio4&quot; name=&quot;customRadio1&quot; class=&quot;form-check-input&quot;&gt;
-                                                                &lt;label class=&quot;form-check-label&quot; for=&quot;customRadio4&quot;&gt;Or toggle this other custom radio&lt;/label&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/div&gt;
-
-                                                        &lt;!-- Disabled--&gt; 
-
-                                                        &lt;div class=&quot;mt-2&quot;&gt;
-                                                            &lt;div class=&quot;form-check form-check-inline&quot;&gt;
-                                                                &lt;input type=&quot;radio&quot; id=&quot;customRadio5&quot; name=&quot;customRadio2&quot; class=&quot;form-check-input&quot; disabled&gt;
-                                                                &lt;label class=&quot;form-check-label&quot; for=&quot;customRadio5&quot;&gt;Toggle this custom radio&lt;/label&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class=&quot;form-check form-check-inline&quot;&gt;
-                                                                &lt;input type=&quot;radio&quot; id=&quot;customRadio6&quot; name=&quot;customRadio2&quot; class=&quot;form-check-input&quot; checked disabled&gt;
-                                                                &lt;label class=&quot;form-check-label&quot; for=&quot;customRadio6&quot;&gt;Or toggle this other custom radio&lt;/label&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/div&gt;
-
-                                                        &lt;!-- Colors --&gt; 
-
-                                                        &lt;div class=&quot;form-check mb-2&quot;&gt;
-                                                            &lt;input type=&quot;radio&quot; id=&quot;customRadiocolor1&quot; name=&quot;customRadiocolor1&quot; class=&quot;form-check-input&quot; checked&gt;
-                                                            &lt;label class=&quot;form-check-label&quot; for=&quot;customRadiocolor1&quot;&gt;Default Radio&lt;/label&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class=&quot;form-check form-radio-success mb-2&quot;&gt;
-                                                            &lt;input type=&quot;radio&quot; id=&quot;customRadiocolor2&quot; name=&quot;customRadiocolor2&quot; class=&quot;form-check-input&quot; checked&gt;
-                                                            &lt;label class=&quot;form-check-label&quot; for=&quot;customRadiocolor2&quot;&gt;Success Radio&lt;/label&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class=&quot;form-check form-radio-info mb-2&quot;&gt;
-                                                            &lt;input type=&quot;radio&quot; id=&quot;customRadiocolor3&quot; name=&quot;customRadiocolor3&quot; class=&quot;form-check-input&quot; checked&gt;
-                                                            &lt;label class=&quot;form-check-label&quot; for=&quot;customRadiocolor3&quot;&gt;Info Radio&lt;/label&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class=&quot;form-check form-radio-secondary mb-2&quot;&gt;
-                                                            &lt;input type=&quot;radio&quot; id=&quot;customRadiocolor6&quot; name=&quot;customRadiocolor6&quot; class=&quot;form-check-input&quot; checked&gt;
-                                                            &lt;label class=&quot;form-check-label&quot; for=&quot;customRadiocolor6&quot;&gt;Secondary Radio&lt;/label&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class=&quot;form-check form-radio-warning mb-2&quot;&gt;
-                                                            &lt;input type=&quot;radio&quot; id=&quot;customRadiocolor4&quot; name=&quot;customRadiocolor4&quot; class=&quot;form-check-input&quot; checked&gt;
-                                                            &lt;label class=&quot;form-check-label&quot; for=&quot;customRadiocolor4&quot;&gt;Warning Radio&lt;/label&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class=&quot;form-check form-radio-danger mb-2&quot;&gt;
-                                                            &lt;input type=&quot;radio&quot; id=&quot;customRadiocolor5&quot; name=&quot;customRadiocolor5&quot; class=&quot;form-check-input&quot; checked&gt;
-                                                            &lt;label class=&quot;form-check-label&quot; for=&quot;customRadiocolor5&quot;&gt;Danger Radio&lt;/label&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class=&quot;form-check form-radio-dark&quot;&gt;
-                                                            &lt;input type=&quot;radio&quot; id=&quot;customRadiocolor7&quot; name=&quot;customRadiocolor7&quot; class=&quot;form-check-input&quot; checked&gt;
-                                                            &lt;label class=&quot;form-check-label&quot; for=&quot;customRadiocolor7&quot;&gt;Dark Radio&lt;/label&gt;
-                                                        &lt;/div&gt;
-                                                    </code>
-                                                </pre> <!-- end highlight-->
-                                        </div> <!-- end preview code-->
+                                       
                                     </div> <!-- end tab-content-->
 
                                 </div> <!-- end card-body -->
@@ -2127,21 +1654,7 @@
                                 <div class="card-body">
 
                                     <h4 class="header-title">Input Sizes</h4>
-                                    <p class="text-muted font-14">
-                                        Set heights using classes like <code>.input-lg</code>, and set widths using grid column classes like <code>.col-lg-*</code>.
-                                    </p>
-
-                                    <ul class="nav nav-tabs nav-bordered mb-3">
-                                        <li class="nav-item">
-                                            <a href="#input-sizes-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
-                                                Preview
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#input-sizes-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-                                                Code
-                                            </a>
-                                        </li>
+                                  
                                     </ul> <!-- end nav-->
                                     <div class="tab-content">
                                         <div class="tab-pane show active" id="input-sizes-preview">
@@ -2172,36 +1685,7 @@
                                             </form>
                                         </div> <!-- end preview-->
 
-                                        <div class="tab-pane code" id="input-sizes-code">
-                                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
-                                            <pre class="mb-0">
-                                                    <code class="language-markup">
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-input-small&quot; class=&quot;form-label&quot;&gt;Small&lt;/label&gt;
-                                                            &lt;input type=&quot;text&quot; id=&quot;example-input-small&quot; name=&quot;example-input-small&quot; class=&quot;form-control form-control-sm&quot; placeholder=&quot;.input-sm&quot;&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-input-normal&quot; class=&quot;form-label&quot;&gt;Normal&lt;/label&gt;
-                                                            &lt;input type=&quot;text&quot; id=&quot;example-input-normal&quot; name=&quot;example-input-normal&quot; class=&quot;form-control&quot; placeholder=&quot;Normal&quot;&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-3&quot;&gt;
-                                                            &lt;label for=&quot;example-input-large&quot; class=&quot;form-label&quot;&gt;Large&lt;/label&gt;
-                                                            &lt;input type=&quot;text&quot; id=&quot;example-input-large&quot; name=&quot;example-input-large&quot; class=&quot;form-control form-control-lg&quot; placeholder=&quot;.input-lg&quot;&gt;
-                                                        &lt;/div&gt;
-                                                        
-                                                        &lt;div class=&quot;mb-2&quot;&gt;
-                                                            &lt;label for=&quot;example-gridsize&quot; class=&quot;form-label&quot;&gt;Grid Sizes&lt;/label&gt;
-                                                            &lt;div class=&quot;row&quot;&gt;
-                                                                &lt;div class=&quot;col-sm-4&quot;&gt;
-                                                                    &lt;input type=&quot;text&quot; id=&quot;example-gridsize&quot; class=&quot;form-control&quot; placeholder=&quot;.col-sm-4&quot;&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/div&gt;
-                                                    </code>
-                                                </pre> <!-- end highlight-->
-                                        </div> <!-- end preview code-->
+                                     
                                     </div> <!-- end tab-content-->
 
                                 </div> <!-- end card-body -->
@@ -2213,22 +1697,9 @@
                                 <div class="card-body">
 
                                     <h4 class="header-title">Input Group</h4>
-                                    <p class="text-muted font-14">
-                                        Easily extend form controls by adding text, buttons, or button groups on either side of textual inputs, custom selects, and custom file inputs
-                                    </p>
+                                   
 
-                                    <ul class="nav nav-tabs nav-bordered mb-3">
-                                        <li class="nav-item">
-                                            <a href="#input-group-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
-                                                Preview
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#input-group-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-                                                Code
-                                            </a>
-                                        </li>
-                                    </ul> <!-- end nav-->
+                                  
                                     <div class="tab-content">
                                         <div class="tab-pane show active" id="input-group-preview">
                                             <form>
@@ -2274,54 +1745,7 @@
                                             </form>
                                         </div> <!-- end preview-->
 
-                                        <div class="tab-pane code" id="input-group-code">
-                                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
-                                            <pre class="mb-0">
-                                                    <code class="language-markup">
-                                                        &lt;form&gt;
-                                                            &lt;div class=&quot;mb-3&quot;&gt;
-                                                                &lt;label class=&quot;form-label&quot;&gt;Static&lt;/label&gt;
-                                                                &lt;div class=&quot;input-group flex-nowrap&quot;&gt;
-                                                                    &lt;span class=&quot;input-group-text&quot; id=&quot;basic-addon1&quot;&gt;@&lt;/span&gt;
-                                                                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-label=&quot;Username&quot; aria-describedby=&quot;basic-addon1&quot;&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                
-                                                            &lt;div class=&quot;mb-3&quot;&gt;
-                                                                &lt;label class=&quot;form-label&quot;&gt;Dropdowns&lt;/label&gt;
-                                                                &lt;div class=&quot;input-group&quot;&gt;
-                                                                    &lt;button class=&quot;btn btn-primary dropdown-toggle&quot; type=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Dropdown&lt;/button&gt;
-                                                                    &lt;div class=&quot;dropdown-menu&quot;&gt;
-                                                                        &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;
-                                                                        &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;
-                                                                        &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
-                                                                    &lt;/div&gt;
-                                                                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;&quot; aria-label=&quot;&quot; aria-describedby=&quot;basic-addon1&quot;&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                
-                                                            &lt;div class=&quot;mb-3&quot;&gt;
-                                                                &lt;label class=&quot;form-label&quot;&gt;Buttons&lt;/label&gt;
-                                                                &lt;div class=&quot;input-group&quot;&gt;
-                                                                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Recipient's username&quot; aria-label=&quot;Recipient's username&quot;&gt;
-                                                                    &lt;button class=&quot;btn btn-dark&quot; type=&quot;button&quot;&gt;Button&lt;/button&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                
-                                                            &lt;div class=&quot;row g-2&quot;&gt;
-                                                                &lt;div class=&quot;col-sm-6&quot;&gt;
-                                                                    &lt;label class=&quot;form-label&quot;&gt;File input&lt;/label&gt;
-                                                                    &lt;input class=&quot;form-control&quot; type=&quot;file&quot; id=&quot;inputGroupFile04&quot;&gt;
-                                                                &lt;/div&gt;
-                                                                &lt;div class=&quot;col-sm-6&quot;&gt;
-                                                                    &lt;label for=&quot;formFileMultiple&quot; class=&quot;form-label&quot;&gt;Multiple files input&lt;/label&gt;
-                                                                    &lt;input class=&quot;form-control&quot; type=&quot;file&quot; id=&quot;formFileMultiple&quot; multiple&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/form&gt; 
-                                                    </code>
-                                                </pre> <!-- end highlight-->
-                                        </div> <!-- end preview code-->
+                                       
                                     </div> <!-- end tab-content-->
 
                                 </div> <!-- end card-body -->
@@ -2336,22 +1760,9 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="header-title">Basic Example</h4>
-                                    <p class="text-muted font-14">Here’s a quick example to demonstrate Bootstrap’s form styles. Keep reading for documentation on required classes, form layout, and more.</p>
 
-                                    <ul class="nav nav-tabs nav-bordered mb-3">
-                                        <li class="nav-item">
-                                            <a href="#basic-form-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
-                                                Preview
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#basic-form-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-                                                Code
-                                            </a>
-                                        </li>
-                                    </ul> <!-- end nav-->
-                                    <div class="tab-content">
-                                        <div class="tab-pane show active" id="basic-form-preview">
+                                    <div>
+                                        <div  id="basic-form-preview">
                                             <form>
                                                 <div class="mb-3">
                                                     <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -2372,31 +1783,7 @@
                                             </form>
                                         </div> <!-- end preview-->
 
-                                        <div class="tab-pane code" id="basic-form-code">
-                                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
-                                            <pre class="mb-0">
-                                                    <code class="language-markup">
-                                                        &lt;form&gt;
-                                                            &lt;div class=&quot;mb-3&quot;&gt;
-                                                                &lt;label for=&quot;exampleInputEmail1&quot; class=&quot;form-label&quot;&gt;Email address&lt;/label&gt;
-                                                                &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; aria-describedby=&quot;emailHelp&quot; placeholder=&quot;Enter email&quot;&gt;
-                                                                &lt;small id=&quot;emailHelp&quot; class=&quot;form-text text-muted&quot;&gt;We'll never share your email with anyone else.&lt;/small&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class=&quot;mb-3&quot;&gt;
-                                                                &lt;label for=&quot;exampleInputPassword1&quot; class=&quot;form-label&quot;&gt;Password&lt;/label&gt;
-                                                                &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword1&quot; placeholder=&quot;Password&quot;&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class=&quot;mb-3&quot;&gt;
-                                                                &lt;div class=&quot;form-check&quot;&gt;
-                                                                    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;checkmeout0&quot;&gt;
-                                                                    &lt;label class=&quot;form-check-label&quot; for=&quot;checkmeout0&quot;&gt;Check me out !&lt;/label&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
-                                                        &lt;/form&gt;
-                                                    </code>
-                                                </pre> <!-- end highlight-->
-                                        </div> <!-- end preview code-->
+                                    
                                     </div> <!-- end tab-content-->
 
                                 </div> <!-- end card-body-->
@@ -2408,22 +1795,10 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="header-title">Horizontal form</h4>
-                                    <p class="text-muted font-14">Create horizontal forms with the grid by adding the <code>.row</code> class to form groups and using the <code>.col-*-*</code> classes to specify the width of your labels and controls. Be sure to add <code>.col-form-label</code> to your <code>&lt;label&gt;</code>s as well so they’re vertically centered with their associated form controls.</p>
-
-                                    <ul class="nav nav-tabs nav-bordered mb-3">
-                                        <li class="nav-item">
-                                            <a href="#horizontal-form-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
-                                                Preview
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#horizontal-form-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-                                                Code
-                                            </a>
-                                        </li>
-                                    </ul> <!-- end nav-->
-                                    <div class="tab-content">
-                                        <div class="tab-pane show active" id="horizontal-form-preview">
+                         
+                                      
+                                    <div>
+                                        <div id="horizontal-form-preview">
                                             <form class="form-horizontal">
                                                 <div class="row mb-3">
                                                     <label for="inputEmail3" class="col-3 col-form-label">Email</label>
@@ -2459,50 +1834,11 @@
                                             </form>
                                         </div> <!-- end preview-->
 
-                                        <div class="tab-pane code" id="horizontal-form-code">
-                                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
-                                            <pre class="mb-0">
-                                                    <code class="language-markup">
-                                                        &lt;form class=&quot;form-horizontal&quot;&gt;
-                                                            &lt;div class=&quot;row mb-3&quot;&gt;
-                                                                &lt;label for=&quot;inputEmail3&quot; class=&quot;col-3 col-form-label&quot;&gt;Email&lt;/label&gt;
-                                                                &lt;div class=&quot;col-9&quot;&gt;
-                                                                    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;inputEmail3&quot; placeholder=&quot;Email&quot;&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class=&quot;row mb-3&quot;&gt;
-                                                                &lt;label for=&quot;inputPassword3&quot; class=&quot;col-3 col-form-label&quot;&gt;Password&lt;/label&gt;
-                                                                &lt;div class=&quot;col-9&quot;&gt;
-                                                                    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword3&quot; placeholder=&quot;Password&quot;&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class=&quot;row mb-3&quot;&gt;
-                                                                &lt;label for=&quot;inputPassword5&quot; class=&quot;col-3 col-form-label&quot;&gt;Re Password&lt;/label&gt;
-                                                                &lt;div class=&quot;col-9&quot;&gt;
-                                                                    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword5&quot; placeholder=&quot;Retype Password&quot;&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class=&quot;row mb-3 justify-content-end&quot;&gt;
-                                                                &lt;div class=&quot;col-9&quot;&gt;
-                                                                    &lt;div class=&quot;form-check&quot;&gt;
-                                                                        &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;checkmeout&quot;&gt;
-                                                                        &lt;label class=&quot;form-check-label&quot; for=&quot;checkmeout&quot;&gt;Check me out !&lt;/label&gt;
-                                                                    &lt;/div&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class=&quot;justify-content-end row&quot;&gt;
-                                                                &lt;div class=&quot;col-9&quot;&gt;
-                                                                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-info&quot;&gt;Sign in&lt;/button&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/form&gt; 
-                                                    </code>
-                                                </pre> <!-- end highlight-->
-                                        </div> <!-- end preview code-->
-                                    </div> <!-- end tab-content-->
-                                </div> <!-- end card-body -->
-                            </div> <!-- end card -->
-                        </div> <!-- end col -->
+                                        
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
 
                     </div>
                     <!-- end row -->
@@ -2515,24 +1851,9 @@
                                 <div class="card-body">
 
                                     <h4 class="header-title">Inline Form</h4>
-                                    <p class="text-muted font-14">
-                                        Use the <code>.row-cols-lg-auto</code>, <code>.g-3</code> & <code>.align-items-center</code> class to display a series of labels, form controls, and buttons on a single horizontal row. Form controls within inline forms vary slightly from their default states. Controls only appear inline in viewports that are at least 576px wide to account for narrow viewports on mobile devices.
-                                    </p>
-
-                                    <ul class="nav nav-tabs nav-bordered mb-3">
-                                        <li class="nav-item">
-                                            <a href="#inline-form-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
-                                                Preview
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#inline-form-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-                                                Code
-                                            </a>
-                                        </li>
-                                    </ul> <!-- end nav-->
-                                    <div class="tab-content">
-                                        <div class="tab-pane show active" id="inline-form-preview">
+   
+                                    <div>
+                                        <div id="inline-form-preview">
                                             <form class="row row-cols-lg-auto g-3 align-items-center">
                                                 <div class="col-12">
                                                     <label for="staticEmail2" class="visually-hidden">Email</label>
@@ -2574,57 +1895,12 @@
                                             </form>
                                         </div> <!-- end preview-->
 
-                                        <div class="tab-pane code" id="inline-form-code">
-                                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
-                                            <pre class="mb-0">
-                                                    <code class="language-markup">
-                                                        &lt;form class=&quot;row row-cols-lg-auto g-3 align-items-center&quot;&gt;
-                                                            &lt;div class=&quot;col-12&quot;&gt;
-                                                                &lt;label for=&quot;staticEmail2&quot; class=&quot;visually-hidden&quot;&gt;Email&lt;/label&gt;
-                                                                &lt;input type=&quot;text&quot; readonly class=&quot;form-control-plaintext&quot; id=&quot;staticEmail2&quot; value=&quot;email@example.com&quot;&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class=&quot;col-12&quot;&gt;
-                                                                &lt;label for=&quot;inputPassword2&quot; class=&quot;visually-hidden&quot;&gt;Password&lt;/label&gt;
-                                                                &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword2&quot; placeholder=&quot;Password&quot;&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class=&quot;col-12&quot;&gt;
-                                                                &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Confirm identity&lt;/button&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/form&gt;
-                    
-                                                        &lt;h6 class=&quot;font-13 mt-3&quot;&gt;Auto-sizing&lt;/h6&gt;
-                                                        &lt;form&gt;
-                                                            &lt;div class=&quot;row gy-2 gx-2 align-items-center&quot;&gt;
-                                                                &lt;div class=&quot;col-auto&quot;&gt;
-                                                                    &lt;label class=&quot;visually-hidden&quot; for=&quot;inlineFormInput&quot;&gt;Name&lt;/label&gt;
-                                                                    &lt;input type=&quot;text&quot; class=&quot;form-control mb-2&quot; id=&quot;inlineFormInput&quot; placeholder=&quot;Jane Doe&quot;&gt;
-                                                                &lt;/div&gt;
-                                                                &lt;div class=&quot;col-auto&quot;&gt;
-                                                                    &lt;label class=&quot;visually-hidden&quot; for=&quot;inlineFormInputGroup&quot;&gt;Username&lt;/label&gt;
-                                                                    &lt;div class=&quot;input-group mb-2&quot;&gt;
-                                                                        &lt;div class=&quot;input-group-text&quot;&gt;@&lt;/div&gt;
-                                                                        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inlineFormInputGroup&quot; placeholder=&quot;Username&quot;&gt;
-                                                                    &lt;/div&gt;
-                                                                &lt;/div&gt;
-                                                                &lt;div class=&quot;col-auto&quot;&gt;
-                                                                    &lt;div class=&quot;form-check mb-2&quot;&gt;
-                                                                        &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;autoSizingCheck&quot;&gt;
-                                                                        &lt;label class=&quot;form-check-label&quot; for=&quot;autoSizingCheck&quot;&gt;Remember me&lt;/label&gt;
-                                                                    &lt;/div&gt;
-                                                                &lt;/div&gt;
-                                                                &lt;div class=&quot;col-auto&quot;&gt;
-                                                                    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary mb-2&quot;&gt;Submit&lt;/button&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/form&gt;  
-                                                    </code>
-                                                </pre> <!-- end highlight-->
-                                        </div> <!-- end preview code-->
-                                    </div> <!-- end tab-content-->
+                                      
+                                    </div> 
 
-                                </div> <!-- end card-body -->
-                            </div> <!-- end card -->
-                        </div> <!-- end col -->
+                                </div> 
+                            </div> 
+                        </div> 
                     </div>
                     <!-- end row -->
 
@@ -2633,22 +1909,9 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="header-title">Horizontal form label sizing</h4>
-                                    <p class="text-muted font-14">Be sure to use <code>.col-form-label-sm</code> or <code>.col-form-label-lg</code> to your <code>&lt;label&gt;</code>s or <code>&lt;legend&gt;</code>s to correctly follow the size of <code>.form-control-lg</code> and <code>.form-control-sm</code>.</p>
-
-                                    <ul class="nav nav-tabs nav-bordered mb-3">
-                                        <li class="nav-item">
-                                            <a href="#label-sizing-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
-                                                Preview
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#label-sizing-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-                                                Code
-                                            </a>
-                                        </li>
-                                    </ul> <!-- end nav-->
-                                    <div class="tab-content">
-                                        <div class="tab-pane show active" id="label-sizing-preview">
+                                  
+                                    <div >
+                                        <div  id="label-sizing-preview">
                                             <form>
                                                 <div class="mb-2 row">
                                                     <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Email</label>
@@ -2671,33 +1934,7 @@
                                             </form>
                                         </div> <!-- end preview-->
 
-                                        <div class="tab-pane code" id="label-sizing-code">
-                                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
-                                            <pre class="mb-0">
-                                                    <code class="language-markup">
-                                                        &lt;form&gt;
-                                                            &lt;div class=&quot;mb-2 row&quot;&gt;
-                                                                &lt;label for=&quot;colFormLabelSm&quot; class=&quot;col-sm-2 col-form-label col-form-label-sm&quot;&gt;Email&lt;/label&gt;
-                                                                &lt;div class=&quot;col-sm-10&quot;&gt;
-                                                                &lt;input type=&quot;email&quot; class=&quot;form-control form-control-sm&quot; id=&quot;colFormLabelSm&quot; placeholder=&quot;col-form-label-sm&quot;&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class=&quot;mb-2 row&quot;&gt;
-                                                                &lt;label for=&quot;colFormLabel&quot; class=&quot;col-sm-2 col-form-label&quot;&gt;Email&lt;/label&gt;
-                                                                &lt;div class=&quot;col-sm-10&quot;&gt;
-                                                                &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;colFormLabel&quot; placeholder=&quot;col-form-label&quot;&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class=&quot;row&quot;&gt;
-                                                                &lt;label for=&quot;colFormLabelLg&quot; class=&quot;col-sm-2 col-form-label col-form-label-lg&quot;&gt;Email&lt;/label&gt;
-                                                                &lt;div class=&quot;col-sm-10&quot;&gt;
-                                                                &lt;input type=&quot;email&quot; class=&quot;form-control form-control-lg&quot; id=&quot;colFormLabelLg&quot; placeholder=&quot;col-form-label-lg&quot;&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/form&gt;
-                                                    </code>
-                                                </pre> <!-- end highlight-->
-                                        </div> <!-- end preview code-->
+                                      
                                     </div> <!-- end tab-content-->
                                 </div> <!-- end card-body -->
                             </div> <!-- end card-->
@@ -2711,24 +1948,9 @@
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="header-title">Form Row</h4>
-                                    <p class="text-muted font-14">
-                                        By adding <code>.row</code> & <code>.g-2</code>, you can have control over the gutter width in as well the inline as block direction.
-                                    </p>
-
-                                    <ul class="nav nav-tabs nav-bordered mb-3">
-                                        <li class="nav-item">
-                                            <a href="#form-row-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
-                                                Preview
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#form-row-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-                                                Code
-                                            </a>
-                                        </li>
-                                    </ul> <!-- end nav-->
-                                    <div class="tab-content">
-                                        <div class="tab-pane show active" id="form-row-preview">
+                                   
+                                    <div >
+                                        <div  id="form-row-preview">
                                             <form>
                                                 <div class="row g-2">
                                                     <div class="mb-3 col-md-6">
@@ -2782,64 +2004,7 @@
                                             </form>
                                         </div> <!-- end preview-->
 
-                                        <div class="tab-pane code" id="form-row-code">
-                                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
-                                            <pre class="mb-0">
-                                                    <code class="language-markup">
-                                                        &lt;form&gt;
-                                                            &lt;div class=&quot;row g-2&quot;&gt;
-                                                                &lt;div class=&quot;mb-3 col-md-6&quot;&gt;
-                                                                    &lt;label for=&quot;inputEmail4&quot; class=&quot;form-label&quot;&gt;Email&lt;/label&gt;
-                                                                    &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;inputEmail4&quot; placeholder=&quot;Email&quot;&gt;
-                                                                &lt;/div&gt;
-                                                                &lt;div class=&quot;mb-3 col-md-6&quot;&gt;
-                                                                    &lt;label for=&quot;inputPassword4&quot; class=&quot;form-label&quot;&gt;Password&lt;/label&gt;
-                                                                    &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword4&quot; placeholder=&quot;Password&quot;&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                
-                                                            &lt;div class=&quot;mb-3&quot;&gt;
-                                                                &lt;label for=&quot;inputAddress&quot; class=&quot;form-label&quot;&gt;Address&lt;/label&gt;
-                                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputAddress&quot; placeholder=&quot;1234 Main St&quot;&gt;
-                                                            &lt;/div&gt;
-                                                            
-                                                            &lt;div class=&quot;mb-3&quot;&gt;
-                                                                &lt;label for=&quot;inputAddress2&quot; class=&quot;form-label&quot;&gt;Address 2&lt;/label&gt;
-                                                                &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputAddress2&quot; placeholder=&quot;Apartment, studio, or floor&quot;&gt;
-                                                            &lt;/div&gt;
-                
-                                                            &lt;div class=&quot;row g-2&quot;&gt;
-                                                                &lt;div class=&quot;mb-3 col-md-6&quot;&gt;
-                                                                    &lt;label for=&quot;inputCity&quot; class=&quot;form-label&quot;&gt;City&lt;/label&gt;
-                                                                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputCity&quot;&gt;
-                                                                &lt;/div&gt;
-                                                                &lt;div class=&quot;mb-3 col-md-4&quot;&gt;
-                                                                    &lt;label for=&quot;inputState&quot; class=&quot;form-label&quot;&gt;State&lt;/label&gt;
-                                                                    &lt;select id=&quot;inputState&quot; class=&quot;form-select&quot;&gt;
-                                                                        &lt;option&gt;Choose&lt;/option&gt;
-                                                                        &lt;option&gt;Option 1&lt;/option&gt;
-                                                                        &lt;option&gt;Option 2&lt;/option&gt;
-                                                                        &lt;option&gt;Option 3&lt;/option&gt;
-                                                                    &lt;/select&gt;
-                                                                &lt;/div&gt;
-                                                                &lt;div class=&quot;mb-3 col-md-2&quot;&gt;
-                                                                    &lt;label for=&quot;inputZip&quot; class=&quot;form-label&quot;&gt;Zip&lt;/label&gt;
-                                                                    &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;inputZip&quot;&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-
-                                                            &lt;div class=&quot;mb-2&quot;&gt;
-                                                                &lt;div class=&quot;form-check&quot;&gt;
-                                                                    &lt;input type=&quot;checkbox&quot; class=&quot;form-check-input&quot; id=&quot;customCheck11&quot;&gt;
-                                                                    &lt;label class=&quot;form-check-label&quot; for=&quot;customCheck11&quot;&gt;Check this custom checkbox&lt;/label&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                
-                                                            &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Sign in&lt;/button&gt;
-                                                        &lt;/form&gt;  
-                                                    </code>
-                                                </pre> <!-- end highlight-->
-                                        </div> <!-- end preview code-->
+                                       
                                     </div> <!-- end tab-content-->
 
                                 </div> <!-- end card-body -->
@@ -2849,274 +2014,198 @@
                     <!-- end row -->
 
                     <!-- Form Layouts -->
-                    <div class="row">
+                    <div class="row ">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
                                     <h4 class="header-title">Form Layouts</h4>
-                                    <p class="text-muted font-14">
-                                        Examples of form layouts with one, two and three columns using Bootstrap's grid system.
-                                    </p>
 
-                                    <ul class="nav nav-tabs nav-bordered mb-3">
-                                        <li class="nav-item">
-                                            <a href="#form-layouts-preview" data-bs-toggle="tab" aria-expanded="false" class="nav-link active">
-                                                Preview
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#form-layouts-code" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
-                                                Code
-                                            </a>
-                                        </li>
-                                    </ul> <!-- end nav-->
-
-                                    <div class="tab-content">
-                                        <div class="tab-pane show active" id="form-layouts-preview">
-                                            <h5 class="mb-3">One Column Form</h5>
-                                            <form class="mb-4">
-                                                <div class="mb-3">
+                                    <div class="py-2 rounded-sm shadow-sm mb-2">
+                                        <h5 class="mb-3 px-2">One Column Form</h5>
+                                            <form >
+                                                <div class="mb-3 px-2">
                                                     <label for="fullname" class="form-label">Full Name</label>
                                                     <input type="text" class="form-control" id="fullname" placeholder="Enter your name" required>
                                                 </div>
-                                                <div class="mb-3">
+                                                <div class="mb-3 px-2">
                                                     <label for="email" class="form-label">Email address</label>
                                                     <input type="email" class="form-control" id="email" placeholder="Enter email" required>
                                                 </div>
-                                                <div class="mb-3">
+                                                <div class="mb-3 px-2">
                                                     <label for="password" class="form-label">Password</label>
                                                     <input type="password" class="form-control" id="password" placeholder="Enter password">
                                                 </div>
-                                                <div class="mb-3">
+                                                <div class="mb-3 px-2">
                                                     <label for="birthdate" class="form-label">Birth Date</label>
                                                     <input type="date" class="form-control" id="birthdate">
                                                 </div>
-                                                <div class="mb-3">
+                                                <div class="mb-3 px-2">
                                                     <label for="birthdate" class="form-label">Profile Picture</label>
                                                     <input type="file" class="form-control" id="birthdate">
                                                 </div>
                                         
-                                                <hr>
+                                                <hr class="hr">
                                                 <div class="d-flex justify-content-end">
-                                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                                    <button type="submit" class="btn btn-primary mx-18">Submit</button>
                                                 </div>
                                             </form>
 
-                                            <h5 class="mb-3 mt-5">Two Columns Form</h5>
-                                            <form class="mb-4">
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="mb-3">
-                                                            <label for="firstname" class="form-label">First Name</label>
-                                                            <input type="text" class="form-control" id="firstname" placeholder="Enter first name" required>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="mb-3">
-                                                            <label for="lastname" class="form-label">Last Name</label>
-                                                            <input type="text" class="form-control" id="lastname" placeholder="Enter last name" required>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="mb-3">
-                                                            <label for="email2" class="form-label">Email</label>
-                                                            <input type="email" class="form-control" id="email2" placeholder="Enter email" required>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="mb-3">
-                                                            <label for="phone" class="form-label">Phone</label>
-                                                            <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="mb-3">
-                                                            <label for="password2" class="form-label">Password</label>
-                                                            <input type="password" class="form-control" id="password2" placeholder="Enter password">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="mb-3">
-                                                            <label for="confirm-password" class="form-label">Confirm Password</label>
-                                                            <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-6">
-                                                        <div class="mb-3">
-                                                            <label for="birthdate2" class="form-label">Date of Birth</label>
-                                                            <input type="date" class="form-control" id="birthdate2">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <div class="mb-3">
-                                                            <label for="country2" class="form-label">Country</label>
-                                                            <select class="form-select" id="country2">
-                                                                <option selected>Select a country</option>
-                                                                <option>France</option>
-                                                                <option>United States</option>
-                                                                <option>United Kingdom</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                    </div>
 
-                                                <hr>
+                                    <div class="py-2 rounded-sm shadow-sm mb-2">
+                                        <h5 class="mb-3 mt-5 px-2">Two Columns Form</h5>
+                                        <form >
+                                            <div class="row">
+                                                <div class="col-md-6 ">
+                                                    <div class="mb-3 px-2">
+                                                        <label for="firstname" class="form-label">First Name</label>
+                                                        <input type="text" class="form-control" id="firstname" placeholder="Enter first name" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3 px-2">
+                                                        <label for="lastname" class="form-label">Last Name</label>
+                                                        <input type="text" class="form-control" id="lastname" placeholder="Enter last name" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="mb-3 px-2">
+                                                        <label for="email2" class="form-label">Email</label>
+                                                        <input type="email" class="form-control" id="email2" placeholder="Enter email" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 ">
+                                                    <div class="mb-3 px-2">
+                                                        <label for="phone" class="form-label">Phone</label>
+                                                        <input type="tel" class="form-control" id="phone" placeholder="Enter phone number">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 ">
+                                                    <div class="mb-3 px-2">
+                                                        <label for="password2" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" id="password2" placeholder="Enter password">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="mb-3 px-2">
+                                                        <label for="confirm-password" class="form-label">Confirm Password</label>
+                                                        <input type="password" class="form-control" id="confirm-password" placeholder="Confirm your password">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="px-2">
+                                                        <label for="birthdate2" class="form-label">Date of Birth</label>
+                                                        <input type="date" class="form-control" id="birthdate2">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <div class="px-2">
+                                                        <label for="country2" class="form-label">Country</label>
+                                                        <select class="form-select" id="country2">
+                                                            <option selected>Select a country</option>
+                                                            <option>France</option>
+                                                            <option>United States</option>
+                                                            <option>United Kingdom</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <hr class="hr">
+                                    
+                                            <div class="d-flex justify-content-end">
+                                                <button type="submit" class="btn btn-primary mx-18">Submit</button>
+                                            </div>
+                                        </form>
+
+                                    </div>
+                                    <div class="py-2 rounded-sm shadow-sm ">
+                                        <h5 class="mb-3 mt-5 px-2">Three Columns Form</h5>
+                                        <form>
+                                            <div class="row px-0">
+                                                <div class="col-md-4">
+                                                    <div class="mb-3 px-2">
+                                                        <label for="firstname3" class="form-label">First Name</label>
+                                                        <input type="text" class="form-control" id="firstname3" placeholder="Enter first name" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="mb-3 px-2">
+                                                        <label for="middlename" class="form-label">Middle Name</label>
+                                                        <input type="text" class="form-control" id="middlename" placeholder="Enter middle name">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="mb-3 px-2">
+                                                        <label for="lastname3" class="form-label">Last Name</label>
+                                                        <input type="text" class="form-control" id="lastname3" placeholder="Enter last name" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="mb-3 px-2">
+                                                        <label for="email3" class="form-label">Email</label>
+                                                        <input type="email" class="form-control" id="email3" placeholder="Enter email" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="mb-3 px-2">
+                                                        <label for="phone3" class="form-label">Phone</label>
+                                                        <input type="tel" class="form-control" id="phone3" placeholder="Enter phone">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="mb-3 px-2">
+                                                        <label for="birthdate3" class="form-label">Date of Birth</label>
+                                                        <input type="date" class="form-control" id="birthdate3">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <div class="px-2">
+                                                        <label for="country3" class="form-label">Country</label>
+                                                        <select class="form-select" id="country3">
+                                                            <option selected>Select a country</option>
+                                                            <option>France</option>
+                                                            <option>United States</option>
+                                                            <option>United Kingdom</option>
+                                                            <option>Germany</option>
+                                                            <option>Spain</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="px-2">
+                                                        <label for="city3" class="form-label">City</label>
+                                                        <input type="text" class="form-control" id="city3" placeholder="Enter city">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="px-2">
+                                                        <label for="profile-pic" class="form-label">Profile Picture</label>
+                                                        <input class="form-control" type="file" id="profile-pic">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                           <hr class="hr">
+                                            <div class="d-flex justify-content-end">
+                                                <button type="submit" class="btn btn-primary mx-18">Submit</button>
+                                                <button type="reset" class="btn btn-light mx-18">Reset</button>
+                                            </div>
+                                        </form>
                                         
-                                                <div class="d-flex justify-content-end">
-                                                    <button type="submit" class="btn btn-primary">Submit</button>
-                                                </div>
-                                            </form>
+                                    </div>
+                                  
 
-                                            <h5 class="mb-3 mt-5">Three Columns Form</h5>
-                                            <form>
-                                                <div class="row px-0">
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3">
-                                                            <label for="firstname3" class="form-label">First Name</label>
-                                                            <input type="text" class="form-control" id="firstname3" placeholder="Enter first name" required>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3">
-                                                            <label for="middlename" class="form-label">Middle Name</label>
-                                                            <input type="text" class="form-control" id="middlename" placeholder="Enter middle name">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3">
-                                                            <label for="lastname3" class="form-label">Last Name</label>
-                                                            <input type="text" class="form-control" id="lastname3" placeholder="Enter last name" required>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3">
-                                                            <label for="email3" class="form-label">Email</label>
-                                                            <input type="email" class="form-control" id="email3" placeholder="Enter email" required>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3">
-                                                            <label for="phone3" class="form-label">Phone</label>
-                                                            <input type="tel" class="form-control" id="phone3" placeholder="Enter phone">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3">
-                                                            <label for="birthdate3" class="form-label">Date of Birth</label>
-                                                            <input type="date" class="form-control" id="birthdate3">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3">
-                                                            <label for="country3" class="form-label">Country</label>
-                                                            <select class="form-select" id="country3">
-                                                                <option selected>Select a country</option>
-                                                                <option>France</option>
-                                                                <option>United States</option>
-                                                                <option>United Kingdom</option>
-                                                                <option>Germany</option>
-                                                                <option>Spain</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3">
-                                                            <label for="city3" class="form-label">City</label>
-                                                            <input type="text" class="form-control" id="city3" placeholder="Enter city">
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <div class="mb-3">
-                                                            <label for="profile-pic" class="form-label">Profile Picture</label>
-                                                            <input class="form-control" type="file" id="profile-pic">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                               <hr>
-                                                <div class="d-flex justify-content-end">
-                                                    <button type="submit" class="btn btn-primary me-2">Submit</button>
-                                                    <button type="reset" class="btn btn-light">Reset</button>
-                                                </div>
-                                            </form>
-                                        </div> <!-- end preview-->
 
-                                        <div class="tab-pane code" id="form-layouts-code">
-                                            <button class="btn-copy-clipboard" data-clipboard-action="copy">Copy</button>
-                                            <pre class="mb-0">
-                                                <code class="language-markup">
-                                                    &lt;!-- One Column Form --&gt;
-                                                    &lt;form&gt;
-                                                        &lt;div class="mb-3"&gt;
-                                                            &lt;label for="fullname" class="form-label"&gt;Full Name&lt;/label&gt;
-                                                            &lt;input type="text" class="form-control" id="fullname" placeholder="Enter your name"&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;div class="mb-3"&gt;
-                                                            &lt;label for="email" class="form-label"&gt;Email address&lt;/label&gt;
-                                                            &lt;input type="email" class="form-control" id="email" placeholder="Enter email"&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;!-- More form fields --&gt;
-                                                        &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
-                                                    &lt;/form&gt;
-
-                                                    &lt;!-- Two Columns Form --&gt;
-                                                    &lt;form&gt;
-                                                        &lt;div class="row"&gt;
-                                                            &lt;div class="col-md-6"&gt;
-                                                                &lt;div class="mb-3"&gt;
-                                                                    &lt;label for="firstname" class="form-label"&gt;First Name&lt;/label&gt;
-                                                                    &lt;input type="text" class="form-control" id="firstname" placeholder="Enter first name"&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class="col-md-6"&gt;
-                                                                &lt;div class="mb-3"&gt;
-                                                                    &lt;label for="lastname" class="form-label"&gt;Last Name&lt;/label&gt;
-                                                                    &lt;input type="text" class="form-control" id="lastname" placeholder="Enter last name"&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;!-- More form rows --&gt;
-                                                        &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
-                                                    &lt;/form&gt;
-
-                                                    &lt;!-- Three Columns Form --&gt;
-                                                    &lt;form&gt;
-                                                        &lt;div class="row"&gt;
-                                                            &lt;div class="col-md-4"&gt;
-                                                                &lt;div class="mb-3"&gt;
-                                                                    &lt;label for="firstname2" class="form-label"&gt;First Name&lt;/label&gt;
-                                                                    &lt;input type="text" class="form-control" id="firstname2" placeholder="Enter first name"&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class="col-md-4"&gt;
-                                                                &lt;div class="mb-3"&gt;
-                                                                    &lt;label for="middlename" class="form-label"&gt;Middle Name&lt;/label&gt;
-                                                                    &lt;input type="text" class="form-control" id="middlename" placeholder="Enter middle name"&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                            &lt;div class="col-md-4"&gt;
-                                                                &lt;div class="mb-3"&gt;
-                                                                    &lt;label for="lastname2" class="form-label"&gt;Last Name&lt;/label&gt;
-                                                                    &lt;input type="text" class="form-control" id="lastname2" placeholder="Enter last name"&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/div&gt;
-                                                        &lt;!-- More form rows --&gt;
-                                                        &lt;button type="submit" class="btn btn-primary"&gt;Submit&lt;/button&gt;
-                                                    &lt;/form&gt;
-                                                </code>
-                                            </pre> <!-- end highlight-->
-                                        </div> <!-- end preview code-->
-                                    </div> <!-- end tab-content-->
                                 </div> <!-- end card-body -->
                             </div> <!-- end card -->
                         </div> <!-- end col -->

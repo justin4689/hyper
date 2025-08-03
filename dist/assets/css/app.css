@@ -21126,7 +21126,7 @@ pre[class*=language-] code:not(:last-of-type) {
   background-color: #ffffff;
 }
 #basic-datatable tbody tr:nth-child(even) {
-  background-color: rgba(88, 116, 254, 0.0039215686);
+  background-color: rgba(88, 115, 254, 0.0392156863);
 }
 #basic-datatable tbody td {
   background-color: inherit !important;
@@ -21145,6 +21145,10 @@ pre[class*=language-] code:not(:last-of-type) {
   border-radius: 0.375rem !important;
 }
 
-.mx-20 {
+.mx-18 {
   margin-right: 18px !important;
+}
+
+.hr {
+  margin: 10px 0 !important;
 }

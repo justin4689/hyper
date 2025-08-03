@@ -150,7 +150,7 @@ File: Main Css File
     }
     
     tbody tr:nth-child(even) {
-        background-color: #5874fe01;
+        background-color: #5873fe0a;
     }
     
     /* Style pour les cellules */
@@ -172,6 +172,10 @@ File: Main Css File
     border-radius: 0.375rem !important;
 }
 
-.mx-20 {
+.mx-18 {
     margin-right: 18px !important;
 }
+
+.hr {
+    margin: 10px 0 !important;
+  }
