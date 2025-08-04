@@ -147,10 +147,16 @@ File: Main Css File
     
     tbody tr:nth-child(odd) {
         background-color: #ffffff;
+        [data-bs-theme="dark"] & {
+            background-color: #1a1a1a; /* Noir légèrement éclairé pour les lignes impaires en mode sombre */
+        }
     }
     
     tbody tr:nth-child(even) {
         background-color: #5873fe0a;
+        [data-bs-theme="dark"] & {
+            background-color: #262626; /* Noir un peu plus clair pour les lignes paires en mode sombre */
+        }
     }
     
     /* Style pour les cellules */
@@ -177,5 +183,5 @@ File: Main Css File
 }
 
 .hr {
-    margin: 10px 0 !important;
+    margin: 20px 0 !important;
   }

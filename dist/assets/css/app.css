@@ -21125,8 +21125,14 @@ pre[class*=language-] code:not(:last-of-type) {
 #basic-datatable tbody tr:nth-child(odd) {
   background-color: #ffffff;
 }
+[data-bs-theme=dark] #basic-datatable tbody tr:nth-child(odd) {
+  background-color: #1a1a1a; /* Noir légèrement éclairé pour les lignes impaires en mode sombre */
+}
 #basic-datatable tbody tr:nth-child(even) {
   background-color: rgba(88, 115, 254, 0.0392156863);
+}
+[data-bs-theme=dark] #basic-datatable tbody tr:nth-child(even) {
+  background-color: #262626; /* Noir un peu plus clair pour les lignes paires en mode sombre */
 }
 #basic-datatable tbody td {
   background-color: inherit !important;
@@ -21150,5 +21156,5 @@ pre[class*=language-] code:not(:last-of-type) {
 }
 
 .hr {
-  margin: 10px 0 !important;
+  margin: 20px 0 !important;
 }
