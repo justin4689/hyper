@@ -21119,6 +21119,10 @@ pre[class*=language-] code:not(:last-of-type) {
   padding: 0.5rem !important; /* Réduire le padding des en-têtes */
   font-size: 0.8rem; /* Réduire légèrement la taille de la police des en-têtes */
 }
+[data-bs-theme=dark] #basic-datatable thead th {
+  background-color: #37404a !important;
+  /* Noir un peu plus clair pour les lignes paires en mode sombre */
+}
 #basic-datatable tbody tr {
   height: 10px; /* Hauteur fixe pour toutes les lignes */
 }
@@ -21126,13 +21130,14 @@ pre[class*=language-] code:not(:last-of-type) {
   background-color: #ffffff;
 }
 [data-bs-theme=dark] #basic-datatable tbody tr:nth-child(odd) {
-  background-color: #1a1a1a; /* Noir légèrement éclairé pour les lignes impaires en mode sombre */
+  background-color: #404954 !important; /* Noir légèrement éclairé pour les lignes impaires en mode sombre */
 }
 #basic-datatable tbody tr:nth-child(even) {
   background-color: rgba(88, 115, 254, 0.0392156863);
 }
 [data-bs-theme=dark] #basic-datatable tbody tr:nth-child(even) {
-  background-color: #262626; /* Noir un peu plus clair pour les lignes paires en mode sombre */
+  background-color: #37404a;
+  /* Noir un peu plus clair pour les lignes paires en mode sombre */
 }
 #basic-datatable tbody td {
   background-color: inherit !important;
@@ -21157,4 +21162,9 @@ pre[class*=language-] code:not(:last-of-type) {
 
 .hr {
   margin: 20px 0 !important;
+}
+
+.hr-button {
+  margin-top: 24px;
+  margin-bottom: 20px;
 }

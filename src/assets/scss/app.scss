@@ -136,6 +136,10 @@ File: Main Css File
 #basic-datatable {
     thead th {
         background-color: #5873fe0a !important;
+        [data-bs-theme="dark"] & {
+            background-color: #37404a !important;
+            /* Noir un peu plus clair pour les lignes paires en mode sombre */
+        }
         padding: 0.5rem !important; /* Réduire le padding des en-têtes */
         font-size: 0.8rem; /* Réduire légèrement la taille de la police des en-têtes */
     }
@@ -148,14 +152,15 @@ File: Main Css File
     tbody tr:nth-child(odd) {
         background-color: #ffffff;
         [data-bs-theme="dark"] & {
-            background-color: #1a1a1a; /* Noir légèrement éclairé pour les lignes impaires en mode sombre */
+            background-color: #404954 !important; /* Noir légèrement éclairé pour les lignes impaires en mode sombre */
         }
     }
     
     tbody tr:nth-child(even) {
         background-color: #5873fe0a;
         [data-bs-theme="dark"] & {
-            background-color: #262626; /* Noir un peu plus clair pour les lignes paires en mode sombre */
+            background-color: #37404a;
+            /* Noir un peu plus clair pour les lignes paires en mode sombre */
         }
     }
     
@@ -184,4 +189,10 @@ File: Main Css File
 
 .hr {
     margin: 20px 0 !important;
+  }
+
+
+  .hr-button {
+    margin-top: 24px;
+    margin-bottom: 20px;
   }
